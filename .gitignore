@@ -284,4 +284,10 @@ __marimo__/
 # ============================
 # Misc
 # ============================ 
+
+# Obsidian
+# Shall be removed if plugins are used
 *.obsidian 
+
+# Drawio
+*.drawio.*
