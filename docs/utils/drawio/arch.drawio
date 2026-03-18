@@ -80,11 +80,11 @@
     </mxGraphModel>
   </diagram>
   <diagram id="sxnvFsYIrM7q8FHlZ7pK" name="install-process">
-    <mxGraphModel dx="2881" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2684" dy="572" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="nWV3b173Gb-NBxGXg0Pk-78" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="start" vertex="1">
+        <mxCell id="nWV3b173Gb-NBxGXg0Pk-78" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="check user rights" vertex="1">
           <mxGeometry height="270" width="170" x="-880" y="90" as="geometry">
             <mxRectangle height="30" width="170" x="-860" y="90" as="alternateBounds" />
           </mxGeometry>
@@ -255,16 +255,16 @@
         <mxCell id="nWV3b173Gb-NBxGXg0Pk-120" parent="nWV3b173Gb-NBxGXg0Pk-117" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="ERR_BOOT_CONF_NOT_FOUND" vertex="1">
           <mxGeometry height="20" width="230" x="90" y="100" as="geometry" />
         </mxCell>
-        <mxCell id="nWV3b173Gb-NBxGXg0Pk-134" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="stop - reboot&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;&lt;u&gt;if required&lt;/u&gt;, when boot config updated&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="160" width="260" x="-880" y="680" as="geometry">
+        <mxCell id="nWV3b173Gb-NBxGXg0Pk-134" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="reboot&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;&lt;u&gt;if required&lt;/u&gt;, when boot config updated&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="260" x="100" y="480" as="geometry">
             <mxRectangle height="30" width="260" x="-880" y="680" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nWV3b173Gb-NBxGXg0Pk-135" parent="nWV3b173Gb-NBxGXg0Pk-134" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="prompt user a reboot is needed" vertex="1">
-          <mxGeometry height="30" width="220" x="20" y="60" as="geometry" />
+          <mxGeometry height="30" width="220" x="20" y="50" as="geometry" />
         </mxCell>
         <mxCell id="nWV3b173Gb-NBxGXg0Pk-139" parent="nWV3b173Gb-NBxGXg0Pk-134" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="end without needing a reboot" vertex="1">
-          <mxGeometry height="30" width="220" x="20" y="110" as="geometry" />
+          <mxGeometry height="30" width="220" x="20" y="100" as="geometry" />
         </mxCell>
         <mxCell id="nWV3b173Gb-NBxGXg0Pk-149" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="system upgrade&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;dependencies&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="140" width="260" x="-580" y="480" as="geometry">
@@ -310,6 +310,19 @@
         <mxCell id="nWV3b173Gb-NBxGXg0Pk-170" edge="1" parent="1" source="nWV3b173Gb-NBxGXg0Pk-153" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="nWV3b173Gb-NBxGXg0Pk-118">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="qpI-lHy-DToIEP5U5FPb-1" edge="1" parent="1" source="nWV3b173Gb-NBxGXg0Pk-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nWV3b173Gb-NBxGXg0Pk-135">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="545.1428571428571" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qpI-lHy-DToIEP5U5FPb-2" edge="1" parent="1" source="nWV3b173Gb-NBxGXg0Pk-118" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nWV3b173Gb-NBxGXg0Pk-139">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="545" />
+              <mxPoint x="80" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
@@ -318,7 +331,7 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="0V4YaZPSj6QGHwvcgUTj-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="start" vertex="1">
+        <mxCell id="0V4YaZPSj6QGHwvcgUTj-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="check user rights" vertex="1">
           <mxGeometry height="270" width="170" x="140" y="500" as="geometry">
             <mxRectangle height="30" width="170" x="140" y="500" as="alternateBounds" />
           </mxGeometry>
@@ -349,7 +362,7 @@
         <mxCell id="0V4YaZPSj6QGHwvcgUTj-8" parent="0V4YaZPSj6QGHwvcgUTj-1" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;check sudo&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="130" x="20" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="0V4YaZPSj6QGHwvcgUTj-9" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="stop -&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;load edid&amp;nbsp;&lt;/span&gt;" vertex="1">
+        <mxCell id="0V4YaZPSj6QGHwvcgUTj-9" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;load edid&amp;nbsp;&lt;/span&gt;" vertex="1">
           <mxGeometry height="100" width="320" x="350" y="500" as="geometry">
             <mxRectangle height="30" width="260" x="350" y="500" as="alternateBounds" />
           </mxGeometry>
@@ -364,11 +377,11 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Blek_lMWiqYoJ6xGbnrD" name="start-process">
-    <mxGraphModel dx="961" dy="559" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1377" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="1Nc2wZU_qzl39a8Os9jT-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="start" vertex="1">
+        <mxCell id="1Nc2wZU_qzl39a8Os9jT-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="check user rights" vertex="1">
           <mxGeometry height="270" width="170" x="150" y="120" as="geometry">
             <mxRectangle height="30" width="170" x="-860" y="90" as="alternateBounds" />
           </mxGeometry>
@@ -441,7 +454,7 @@
         <mxCell id="1Nc2wZU_qzl39a8Os9jT-30" parent="1Nc2wZU_qzl39a8Os9jT-29" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;span style=&quot;font-weight: 700;&quot;&gt;apply required pixel format&lt;/span&gt;&lt;div&gt;&lt;i&gt;UYVY&lt;/i&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="220" x="20" y="50" as="geometry" />
         </mxCell>
-        <mxCell id="1Nc2wZU_qzl39a8Os9jT-40" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="stop - apply timings" vertex="1">
+        <mxCell id="1Nc2wZU_qzl39a8Os9jT-40" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="apply timings" vertex="1">
           <mxGeometry height="100" width="260" x="450" y="450" as="geometry">
             <mxRectangle height="30" width="260" x="-580" y="480" as="alternateBounds" />
           </mxGeometry>
