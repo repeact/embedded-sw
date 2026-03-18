@@ -291,3 +291,6 @@ __marimo__/
 
 # Drawio
 *.drawio.*
+
+# Office Calc
+*.ods#
