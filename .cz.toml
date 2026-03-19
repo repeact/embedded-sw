@@ -1,0 +1,11 @@
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "pep440"
+
+# NEVER CHANGE
+version = "0.0.1"
+
+bump_message = "bump: version $current_version → $new_version"
+update_changelog_on_bump = true
+annotated_tag = true
