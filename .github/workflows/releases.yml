@@ -1,0 +1,58 @@
+# Base on test repository "https://github.com/Widelx/poc-gh-good-practices"
+
+name: Release with Commitizen
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: [self-hosted, linux, x64]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          fetch-tags: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install Commitizen
+        run: pip3 install commitizen --break-system-packages
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Bump version
+        id: cz
+        run: |
+          if ! python3 -m commitizen bump --yes; then
+            echo "Nothing to bump, skipping release."
+            exit 0
+          fi
+          echo "version=$(git describe --abbrev=0)" >> $GITHUB_OUTPUT
+          git push --follow-tags
+
+      - name: Generate release notes
+        if: steps.cz.outputs.version != ''
+        run: |
+          PREV_TAG=$(git describe --abbrev=0 HEAD^ 2>/dev/null || echo "")
+          if [ -z "$PREV_TAG" ]; then
+            python3 -m commitizen changelog --file-name RELEASE_NOTES.md
+          else
+            python3 -m commitizen changelog --start-rev "$PREV_TAG" --file-name RELEASE_NOTES.md
+          fi
+
+      - name: Create GitHub Release
+        if: steps.cz.outputs.version != ''
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.cz.outputs.version }}
+          name: Release ${{ steps.cz.outputs.version }}
+          body_path: RELEASE_NOTES.md
+          files: CHANGELOG.md
