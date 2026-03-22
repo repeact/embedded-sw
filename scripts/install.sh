@@ -78,5 +78,21 @@ if ! apt-get install -y -q "$PKG_V4L2_UTILS" "$PKG_FFMPEG"; then
 fi
 
 # Update boot config
+log "info" "Checking $CONFIG_FILE"
+
+if [ ! -f "$CONFIG_FILE" ]; then
+    log "err" "Boot config not found: $CONFIG_FILE"
+    exit "$ERR_BOOT_CONF_NOT_FOUND"
+fi
+
+REBOOT_NEEDED=false
+
+for LINE in "${SETTINGS[@]}"; do
+    if ! grep -qxF "$LINE" "$CONFIG_FILE"; then
+        log "info" "Adding: $LINE"
+        printf '%s\n' "$LINE" >> "$CONFIG_FILE"
+        REBOOT_NEEDED=true
+    fi
+done
 
 # Report
