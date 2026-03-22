@@ -162,7 +162,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="sxnvFsYIrM7q8FHlZ7pK" name="install-process">
-    <mxGraphModel dx="2881" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3422" dy="1001" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -198,55 +198,12 @@
           <mxGeometry height="30" width="130" x="20" y="50" as="geometry" />
         </mxCell>
         <mxCell id="nWV3b173Gb-NBxGXg0Pk-80" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="deploy" vertex="1">
-          <mxGeometry height="300" width="260" x="-1250" y="250" as="geometry">
+          <mxGeometry height="100" width="260" x="-1250" y="250" as="geometry">
             <mxRectangle height="30" width="260" x="-650" y="90" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nWV3b173Gb-NBxGXg0Pk-70" parent="nWV3b173Gb-NBxGXg0Pk-80" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;move package files &lt;br&gt;&lt;/b&gt;&lt;i&gt;from SRC to DEST&lt;/i&gt;" vertex="1">
           <mxGeometry height="30" width="220" x="20" y="50" as="geometry" />
-        </mxCell>
-        <mxCell id="nWV3b173Gb-NBxGXg0Pk-37" parent="nWV3b173Gb-NBxGXg0Pk-80" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#f8cecc;strokeColor=#b85450;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="move files&amp;nbsp;" vertex="1">
-          <mxGeometry height="170" width="220" x="20" y="110" as="geometry">
-            <mxRectangle height="40" width="220" x="20" y="110" as="alternateBounds" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nWV3b173Gb-NBxGXg0Pk-38" parent="nWV3b173Gb-NBxGXg0Pk-37" style="rounded=1;whiteSpace=wrap;html=1;" value="move from SRC to DEST" vertex="1">
-          <mxGeometry height="20" width="150" x="10" y="50" as="geometry" />
-        </mxCell>
-        <mxCell id="nWV3b173Gb-NBxGXg0Pk-41" parent="nWV3b173Gb-NBxGXg0Pk-37" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="ERR_FILE_NOT_FOUND" vertex="1">
-          <mxGeometry height="20" width="150" x="60" y="90" as="geometry" />
-        </mxCell>
-        <mxCell id="nWV3b173Gb-NBxGXg0Pk-43" parent="nWV3b173Gb-NBxGXg0Pk-37" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="ERR_MOVE" vertex="1">
-          <mxGeometry height="20" width="150" x="60" y="130" as="geometry" />
-        </mxCell>
-        <mxCell id="nWV3b173Gb-NBxGXg0Pk-44" edge="1" parent="nWV3b173Gb-NBxGXg0Pk-37" source="nWV3b173Gb-NBxGXg0Pk-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=oval;startFill=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" target="nWV3b173Gb-NBxGXg0Pk-41">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="45" y="100" />
-            </Array>
-            <mxPoint x="70" y="80" as="sourcePoint" />
-            <mxPoint x="-29.5" y="120" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nWV3b173Gb-NBxGXg0Pk-46" edge="1" parent="nWV3b173Gb-NBxGXg0Pk-37" source="nWV3b173Gb-NBxGXg0Pk-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=oval;startFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" target="nWV3b173Gb-NBxGXg0Pk-43">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="45" y="140" />
-            </Array>
-            <mxPoint x="50" y="70" as="sourcePoint" />
-            <mxPoint x="30" y="140" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nWV3b173Gb-NBxGXg0Pk-73" edge="1" parent="nWV3b173Gb-NBxGXg0Pk-80" source="nWV3b173Gb-NBxGXg0Pk-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;startArrow=oval;startFill=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="nWV3b173Gb-NBxGXg0Pk-37">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="75" y="90" />
-              <mxPoint x="75" y="90" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nWV3b173Gb-NBxGXg0Pk-74" edge="1" parent="nWV3b173Gb-NBxGXg0Pk-80" source="nWV3b173Gb-NBxGXg0Pk-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;startArrow=oval;startFill=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="nWV3b173Gb-NBxGXg0Pk-70">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nWV3b173Gb-NBxGXg0Pk-86" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="set permissions" vertex="1">
           <mxGeometry height="140" width="340" x="-950" y="250" as="geometry">
@@ -535,7 +492,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Blek_lMWiqYoJ6xGbnrD" name="start-process">
-    <mxGraphModel dx="1425" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2066" dy="1201" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
