@@ -35,6 +35,26 @@ for F in "${EXECUTABLES[@]}"; do
 done
 
 # Create symlinks
+log "info" "Creating symlinks in $BIN_DIR"
+
+for F in "${EXECUTABLES[@]}"; do
+    NAME="${F%.sh}"
+    LINK="$BIN_DIR/$NAME"
+    TARGET="$PIX_DIR/$F"
+
+    if [ -e "$LINK" ] && [ ! -L "$LINK" ]; then
+        log "err" "$LINK exists and is not a symlink — remove it manually and re-run."
+        exit "$ERR_SYMLINK_DUPLICATE"
+    fi
+
+    if [ ! -L "$LINK" ]; then
+        if ! ln -s "$TARGET" "$LINK"; then
+            log "err" "Failed to create symlink: $LINK → $TARGET"
+            exit "$ERR_SYMLINK_CREATE"
+        fi
+        log "debug" "Linked: $NAME → $TARGET"
+    fi
+done
 
 # Upgrade OS
 
