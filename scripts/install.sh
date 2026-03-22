@@ -57,8 +57,25 @@ for F in "${EXECUTABLES[@]}"; do
 done
 
 # Upgrade OS
+log "info" "Upgrading OS packages"
 
-# Install pinned dependencies
+if ! apt-get update -q; then
+    log "err" "apt-get update failed."
+    exit "$ERR_SYS_UPDATE"
+fi
+
+if ! apt-get upgrade -y -q; then
+    log "err" "apt-get upgrade failed."
+    exit "$ERR_SYS_UPDATE"
+fi
+
+# Install packages dependencies
+log "info" "Installing dependencies"
+
+if ! apt-get install -y -q "$PKG_V4L2_UTILS" "$PKG_FFMPEG"; then
+    log "err" "Dependency install failed."
+    exit "$ERR_DEP_UPDATE"
+fi
 
 # Update boot config
 
