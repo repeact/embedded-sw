@@ -18,7 +18,10 @@ EXECUTABLES=(
 
 # Required dependencies files
 SOURCES=(
-
+    "common.sh"
+    "const.sh"
+    "errors.sh"
+    "edid.hex"
 )
 
 # Required hardware config (DTO, in DT$CONFIG_FILE)

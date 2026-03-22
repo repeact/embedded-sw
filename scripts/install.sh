@@ -13,7 +13,7 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 source "$SCRIPT_DIR/errors.sh"
 source "$SCRIPT_DIR/const.sh"
-source "$SCRIPT_DIR/pix-common.sh"
+source "$SCRIPT_DIR/common.sh"
 
 sudo-check
 
