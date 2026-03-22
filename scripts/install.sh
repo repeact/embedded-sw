@@ -96,3 +96,12 @@ for LINE in "${SETTINGS[@]}"; do
 done
 
 # Report
+echo ""
+if [ "$REBOOT_NEEDED" = true ]; then
+    log "notice" "Install complete. New boot settings added — reboot required."
+    log "notice" "Run: sudo reboot"
+else
+    log "notice" "Install complete. No reboot needed."
+fi
+
+exit "$ERR_OK"
