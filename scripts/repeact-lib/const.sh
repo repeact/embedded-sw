@@ -19,9 +19,9 @@ EXECUTABLES=(
 
 # Required dependencies files
 SOURCES=(
-    "common.sh"
-    "const.sh"
-    "errors.sh"
+    "repeact-lib/common.sh"
+    "repeact-lib/const.sh"
+    "repeact-lib/errors.sh"
 )
 
 # Required hardware config (DTO, in HW_CONFIG_FILE)
