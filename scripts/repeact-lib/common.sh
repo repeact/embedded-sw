@@ -11,24 +11,32 @@
 # =============================================================================
 
 # ANSI colours
+# Only when stdout is an interactive terminal
+if [ -t 1 ]; then
+    _COLOR_WHITE="\033[0;37m"
+    _COLOR_ORANGE="\033[0;33m"
+    _COLOR_RED="\033[0;31m"
+    _COLOR_RESET="\033[0m"
+else
+    _COLOR_WHITE=""
+    _COLOR_ORANGE=""
+    _COLOR_RED=""
+    _COLOR_RESET=""
+fi
 
-# Debug messages, suppressed unless DEBUG=1.
 log() {
     local LEVEL="$1"
     local MSG="$2"
-
     if [ "$LEVEL" = "debug" ] && [ "${DEBUG:-0}" != "1" ]; then
         return
     fi
-
     local COLOR
     case "$LEVEL" in
-    info | notice) COLOR="$_COLOR_WHITE" ;;
-    debug | warning) COLOR="$_COLOR_ORANGE" ;;
+    debug | info | notice) COLOR="$_COLOR_WHITE" ;;
+    warning) COLOR="$_COLOR_ORANGE" ;;
     err) COLOR="$_COLOR_RED" ;;
     *) COLOR="$_COLOR_RESET" ;;
     esac
-
     printf "${COLOR}[%-7s]${_COLOR_RESET} %s\n" "${LEVEL^^}" "$MSG" >&2
 }
 
