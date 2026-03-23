@@ -3,7 +3,8 @@
 # Install paths
 PIX_DIR="/etc/pix"
 BIN_DIR="/usr/local/bin" # Symlinks
-CONFIG_FILE="/boot/firmware/config.txt"
+CONFIG_DIR="$SCRIPT_DIR/../config"
+HW_CONFIG_FILE="/boot/firmware/config.txt"
 
 # Pinned dependency # Hardcoded intentionally: simplified bug tracking
 versions
@@ -21,10 +22,9 @@ SOURCES=(
     "common.sh"
     "const.sh"
     "errors.sh"
-    "edid.hex"
 )
 
-# Required hardware config (DTO, in DT$CONFIG_FILE)
+# Required hardware config (DTO, in HW_CONFIG_FILE)
 SETTINGS=(
 	"camera_auto_detect=0"
 	"dtoverlay=tc358743"
