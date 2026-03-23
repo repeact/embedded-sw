@@ -8,15 +8,6 @@
 #   notice   Significant but normal events                    (white)
 #   warning  Unexpected condition; script continues           (orange)
 #   err      Fatal failure; caller should exit immediately    (red)
-#
-# SWITCHING TO JOURNALD:
-#   Replace the log() body below with the journald implementation at the
-#   bottom of this file. No other script needs to change.
-#
-#   Useful journalctl commands:
-#     journalctl -t start              # logs for one script
-#     journalctl -t start -p warning   # filter by severity
-#     journalctl -t start -f           # follow live
 # =============================================================================
 
 # ANSI colours
