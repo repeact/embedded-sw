@@ -14,9 +14,9 @@
 #   bottom of this file. No other script needs to change.
 #
 #   Useful journalctl commands:
-#     journalctl -t pix-start              # logs for one script
-#     journalctl -t pix-start -p warning   # filter by severity
-#     journalctl -t pix-start -f           # follow live
+#     journalctl -t start              # logs for one script
+#     journalctl -t start -p warning   # filter by severity
+#     journalctl -t start -f           # follow live
 # =============================================================================
 
 # ANSI colours

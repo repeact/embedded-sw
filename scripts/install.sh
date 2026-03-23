@@ -1,7 +1,7 @@
 #!/bin/bash
 # =============================================================================
-# pix-install.sh
-# One-time system setup for the PIX capture pipeline
+# install.sh
+# One-time system setup for the REPEACT capture pipeline
 #
 # Ref: "docs/archi/arch.drawio", "install-process" page.
 # =============================================================================
@@ -18,21 +18,21 @@ source "$SCRIPT_DIR/common.sh"
 sudo-check
 
 # Deploy files
-log "info" "Deploying files to $PIX_DIR"
-mkdir -p "$PIX_DIR"
+log "info" "Deploying files to $REPEACT_DIR"
+mkdir -p "$REPEACT_DIR"
 
 for F in "${EXECUTABLES[@]}" "${SOURCES[@]}"; do
-    mv "$SCRIPT_DIR/$F" "$PIX_DIR/$F"
+    mv "$SCRIPT_DIR/$F" "$REPEACT_DIR/$F"
 done
 
-mv "$CONFIG_DIR/edid.hex" "$PIX_DIR/edid.hex"
+mv "$CONFIG_DIR/edid.hex" "$REPEACT_DIR/edid.hex"
 
 # Set execute permissions
 log "info" "Setting execute permissions"
 
 for F in "${EXECUTABLES[@]}"; do
-    if ! chmod +x "$PIX_DIR/$F"; then
-        log "err" "chmod +x failed: $PIX_DIR/$F"
+    if ! chmod +x "$REPEACT_DIR/$F"; then
+        log "err" "chmod +x failed: $REPEACT_DIR/$F"
         exit "$ERR_EXECUTE_PERMISSION_DENIED"
     fi
 done
@@ -43,7 +43,7 @@ log "info" "Creating symlinks in $BIN_DIR"
 for F in "${EXECUTABLES[@]}"; do
     NAME="${F%.sh}"
     LINK="$BIN_DIR/$NAME"
-    TARGET="$PIX_DIR/$F"
+    TARGET="$REPEACT_DIR/$F"
 
     if [ -e "$LINK" ] && [ ! -L "$LINK" ]; then
         log "err" "$LINK exists and is not a symlink — remove it manually and re-run."
