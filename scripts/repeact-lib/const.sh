@@ -26,10 +26,10 @@ SOURCES=(
 
 # Required hardware config (DTO, in HW_CONFIG_FILE)
 SETTINGS=(
-	"camera_auto_detect=0"
-	"dtoverlay=tc358743"
-	"dtoverlay=cma,cma-128"
-	"gpu_mem=128"
-	"enable_uart=1"
-	"dtoverlay=disable-bt"
+    "camera_auto_detect=0"
+    "dtoverlay=tc358743"
+    "dtoverlay=cma,cma-128"
+    "gpu_mem=128"
+    "enable_uart=1"
+    "dtoverlay=disable-bt"
 )

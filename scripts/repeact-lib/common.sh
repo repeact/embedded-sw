@@ -14,28 +14,28 @@
 
 # Debug messages, suppressed unless DEBUG=1.
 log() {
-	local LEVEL="$1"
-	local MSG="$2"
+    local LEVEL="$1"
+    local MSG="$2"
 
-	if [ "$LEVEL" = "debug" ] && [ "${DEBUG:-0}" != "1" ]; then
-		return
-	fi
+    if [ "$LEVEL" = "debug" ] && [ "${DEBUG:-0}" != "1" ]; then
+        return
+    fi
 
-	local COLOR
-	case "$LEVEL" in
-	info | notice) COLOR="$_COLOR_WHITE" ;;
-	debug | warning) COLOR="$_COLOR_ORANGE" ;;
-	err) COLOR="$_COLOR_RED" ;;
-	*) COLOR="$_COLOR_RESET" ;;
-	esac
+    local COLOR
+    case "$LEVEL" in
+    info | notice) COLOR="$_COLOR_WHITE" ;;
+    debug | warning) COLOR="$_COLOR_ORANGE" ;;
+    err) COLOR="$_COLOR_RED" ;;
+    *) COLOR="$_COLOR_RESET" ;;
+    esac
 
-	printf "${COLOR}[%-7s]${_COLOR_RESET} %s\n" "${LEVEL^^}" "$MSG" >&2
+    printf "${COLOR}[%-7s]${_COLOR_RESET} %s\n" "${LEVEL^^}" "$MSG" >&2
 }
 
 # Note: ensure that files is sourced after errors (since error dependencies)
 sudo-check() {
-	if [ "$EUID" -ne 0 ]; then
-		log "err" "Must be run as root: sudo $(basename "$0")"
-		exit "$ERR_SUDO"
-	fi
+    if [ "$EUID" -ne 0 ]; then
+        log "err" "Must be run as root: sudo $(basename "$0")"
+        exit "$ERR_SUDO"
+    fi
 }
