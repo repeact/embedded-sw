@@ -2,11 +2,11 @@
 
 # Install paths
 PIX_DIR="/etc/pix"
-BIN_DIR="/usr/local/bin"
+BIN_DIR="/usr/local/bin" # Symlinks
 CONFIG_FILE="/boot/firmware/config.txt"
 
-# Pinned dependency versions
-# Hardcoded intentionally: simplified bug tracking
+# Pinned dependency # Hardcoded intentionally: simplified bug tracking
+versions
 PKG_V4L2_UTILS="v4l-utils=1.30.1*"
 PKG_FFMPEG="ffmpeg=7.1*"
 
