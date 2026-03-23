@@ -20,6 +20,7 @@ sudo-check
 # Deploy files
 log "info" "Deploying files to $REPEACT_DIR"
 mkdir -p "$REPEACT_DIR"
+mkdir -p "$REPEACT_DIR/repeact-lib"
 
 for F in "${EXECUTABLES[@]}" "${SOURCES[@]}"; do
     mv "$SCRIPT_DIR/$F" "$REPEACT_DIR/$F"
