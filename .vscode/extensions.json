@@ -1,6 +1,7 @@
 {
     "recommendations": [
         "github.vscode-github-actions",
-        "mkhl.shfmt"
+        "mkhl.shfmt",
+        "editorconfig.editorconfig"
     ]
 }
