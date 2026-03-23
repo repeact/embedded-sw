@@ -11,9 +11,9 @@ set -uo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-source "$SCRIPT_DIR/errors.sh"
-source "$SCRIPT_DIR/const.sh"
-source "$SCRIPT_DIR/common.sh"
+source "$SCRIPT_DIR/repeact-lib/errors.sh"
+source "$SCRIPT_DIR/repeact-lib/const.sh"
+source "$SCRIPT_DIR/repeact-lib/common.sh"
 
 sudo-check
 
