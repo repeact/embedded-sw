@@ -15,6 +15,10 @@ PKG_FFMPEG="ffmpeg=8:7.1*"
 # w/ chmod +x
 # w/ symlinks ($BIN_DIR)
 EXECUTABLES=(
+    "rec.sh"
+    "setup.sh"
+    "start.sh"
+    "stop.sh"
 )
 
 # Required dependencies files
