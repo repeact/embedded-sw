@@ -30,6 +30,4 @@ SETTINGS=(
     "dtoverlay=tc358743"
     "dtoverlay=cma,cma-128"
     "gpu_mem=128"
-    "enable_uart=1"
-    "dtoverlay=disable-bt"
 )
