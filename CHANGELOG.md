@@ -1,4 +1,27 @@
 # Changelog
+## 0.2.0 (2026-03-24)
+
+### Feat
+
+- add project configuration
+- add edid deployement, code refactoring
+- implement ending script user report
+- implement OS/packages upgrade
+- implement symlinks creation function
+- first step of arch implementation
+- create a common library shared across project.
+- implement script errors
+
+### Fix
+
+- patch minor issues
+- patch file name and script paths
+- add ANSI colors w/ terminal conditions
+- add project git config (patch CRLF/LF conversion)
+- patch uncommented line
+- patch file name path
+- patch file paths
+
 ## 0.1.0 (2026-03-19)
 
 ### Feat
