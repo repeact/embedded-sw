@@ -1,7 +1,6 @@
 #!/bin/bash
 # =============================================================================
-# install.sh
-# One-time system setup for the REPEACT capture pipeline
+# One-time system install for REPEACT package
 #
 # Ref: "docs/archi/arch.drawio", "install-process" page.
 # =============================================================================
