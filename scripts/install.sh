@@ -1,12 +1,9 @@
 #!/bin/bash
 # =============================================================================
-# install.sh
-# One-time system setup for the REPEACT capture pipeline
+# One-time system install for REPEACT package
 #
 # Ref: "docs/archi/arch.drawio", "install-process" page.
 # =============================================================================
-
-# Ensure script will always fail (unsilently)
 set -uo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -17,8 +14,11 @@ source "$SCRIPT_DIR/repeact-lib/common.sh"
 
 sudo-check
 
+# =============================================================================
 # Deploy files
+# =============================================================================
 log "info" "Deploying files to $REPEACT_DIR"
+
 mkdir -p "$REPEACT_DIR"
 mkdir -p "$REPEACT_DIR/repeact-lib"
 
@@ -28,7 +28,9 @@ done
 
 mv "$CONFIG_DIR/edid.hex" "$REPEACT_DIR/edid.hex"
 
+# =============================================================================
 # Set execute permissions
+# =============================================================================
 log "info" "Setting execute permissions"
 
 for F in "${EXECUTABLES[@]}"; do
@@ -38,7 +40,9 @@ for F in "${EXECUTABLES[@]}"; do
     fi
 done
 
+# =============================================================================
 # Create symlinks
+# =============================================================================
 log "info" "Creating symlinks in $BIN_DIR"
 
 for F in "${EXECUTABLES[@]}"; do
@@ -60,20 +64,19 @@ for F in "${EXECUTABLES[@]}"; do
     fi
 done
 
-# Upgrade OS
-log "info" "Upgrading OS packages"
+# =============================================================================
+# Refresh package index
+# =============================================================================
+log "info" "Refreshing package index"
 
 if ! apt-get update -q; then
     log "err" "apt-get update failed."
     exit "$ERR_SYS_UPDATE"
 fi
 
-if ! apt-get upgrade -y -q; then
-    log "err" "apt-get upgrade failed."
-    exit "$ERR_SYS_UPDATE"
-fi
-
-# Install packages dependencies
+# =============================================================================
+# Install required dependencies
+# =============================================================================
 log "info" "Installing dependencies"
 
 if ! apt-get install -y -q "$PKG_V4L2_UTILS" "$PKG_FFMPEG"; then
@@ -81,7 +84,9 @@ if ! apt-get install -y -q "$PKG_V4L2_UTILS" "$PKG_FFMPEG"; then
     exit "$ERR_DEP_UPDATE"
 fi
 
+# =============================================================================
 # Update boot config
+# =============================================================================
 log "info" "Checking $HW_CONFIG_FILE"
 
 if [ ! -f "$HW_CONFIG_FILE" ]; then
@@ -94,13 +99,16 @@ REBOOT_NEEDED=false
 for LINE in "${SETTINGS[@]}"; do
     if ! grep -qxF "$LINE" "$HW_CONFIG_FILE"; then
         log "info" "Adding: $LINE"
-        printf '%s\n' "$LINE" >>"$HW_CONFIG_FILE"
+        printf '%s\n' "$LINE" >> "$HW_CONFIG_FILE"
         REBOOT_NEEDED=true
     fi
 done
 
+# =============================================================================
 # Report
+# =============================================================================
 echo ""
+
 if [ "$REBOOT_NEEDED" = true ]; then
     log "notice" "Install complete. New boot settings added — reboot required."
     log "notice" "Run: sudo reboot"
