@@ -4,8 +4,6 @@
 #
 # Ref: "docs/archi/arch.drawio", "install-process" page.
 # =============================================================================
-
-# Ensure script will always fail (unsilently)
 set -uo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
@@ -16,8 +14,11 @@ source "$SCRIPT_DIR/repeact-lib/common.sh"
 
 sudo-check
 
+# =============================================================================
 # Deploy files
+# =============================================================================
 log "info" "Deploying files to $REPEACT_DIR"
+
 mkdir -p "$REPEACT_DIR"
 mkdir -p "$REPEACT_DIR/repeact-lib"
 
@@ -27,7 +28,9 @@ done
 
 mv "$CONFIG_DIR/edid.hex" "$REPEACT_DIR/edid.hex"
 
+# =============================================================================
 # Set execute permissions
+# =============================================================================
 log "info" "Setting execute permissions"
 
 for F in "${EXECUTABLES[@]}"; do
@@ -37,7 +40,9 @@ for F in "${EXECUTABLES[@]}"; do
     fi
 done
 
+# =============================================================================
 # Create symlinks
+# =============================================================================
 log "info" "Creating symlinks in $BIN_DIR"
 
 for F in "${EXECUTABLES[@]}"; do
@@ -59,7 +64,9 @@ for F in "${EXECUTABLES[@]}"; do
     fi
 done
 
+# =============================================================================
 # Upgrade OS
+# =============================================================================
 log "info" "Upgrading OS packages"
 
 if ! apt-get update -q; then
@@ -72,7 +79,9 @@ if ! apt-get upgrade -y -q; then
     exit "$ERR_SYS_UPDATE"
 fi
 
+# =============================================================================
 # Install packages dependencies
+# =============================================================================
 log "info" "Installing dependencies"
 
 if ! apt-get install -y -q "$PKG_V4L2_UTILS" "$PKG_FFMPEG"; then
@@ -80,7 +89,9 @@ if ! apt-get install -y -q "$PKG_V4L2_UTILS" "$PKG_FFMPEG"; then
     exit "$ERR_DEP_UPDATE"
 fi
 
+# =============================================================================
 # Update boot config
+# =============================================================================
 log "info" "Checking $HW_CONFIG_FILE"
 
 if [ ! -f "$HW_CONFIG_FILE" ]; then
@@ -98,8 +109,11 @@ for LINE in "${SETTINGS[@]}"; do
     fi
 done
 
+# =============================================================================
 # Report
+# =============================================================================
 echo ""
+
 if [ "$REBOOT_NEEDED" = true ]; then
     log "notice" "Install complete. New boot settings added — reboot required."
     log "notice" "Run: sudo reboot"
