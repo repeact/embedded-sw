@@ -13,3 +13,4 @@ readonly ERR_SYMLINK_CREATE=4
 readonly ERR_SYS_UPDATE=5
 readonly ERR_DEP_UPDATE=6
 readonly ERR_BOOT_CONF_NOT_FOUND=7
+readonly ERR_INVALID_ARG=8

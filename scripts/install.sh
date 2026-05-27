@@ -2,6 +2,13 @@
 # =============================================================================
 # One-time system install for REPEACT package
 #
+# USAGE:
+#   sudo install.sh [--upgrade]
+#
+# OPTIONS:
+#   --upgrade    Also run apt-get upgrade before installing dependencies.
+#                Recommended on first install. Omit for faster re-runs.
+#
 # Ref: "docs/archi/arch.drawio", "install-process" page.
 # =============================================================================
 set -uo pipefail
@@ -11,6 +18,24 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$SCRIPT_DIR/repeact-lib/errors.sh"
 source "$SCRIPT_DIR/repeact-lib/const.sh"
 source "$SCRIPT_DIR/repeact-lib/common.sh"
+
+# =============================================================================
+# Parse arguments
+# =============================================================================
+DO_UPGRADE=false
+
+for ARG in "$@"; do
+    case "$ARG" in
+        --upgrade)
+            DO_UPGRADE=true
+            ;;
+        *)
+            log "err" "Unknown option: $ARG"
+            log "info" "Usage: sudo install.sh [--upgrade]"
+            exit "$ERR_INVALID_ARG"
+            ;;
+    esac
+done
 
 sudo-check
 
@@ -72,6 +97,20 @@ log "info" "Refreshing package index"
 if ! apt-get update -q; then
     log "err" "apt-get update failed."
     exit "$ERR_SYS_UPDATE"
+fi
+
+# =============================================================================
+# Upgrade OS packages (optional)
+# Use --upgrade flag to enable)
+# =============================================================================
+if [ "$DO_UPGRADE" = true ]; then
+    log "info" "Upgrading OS packages"
+    if ! apt-get upgrade -y -q; then
+        log "err" "apt-get upgrade failed."
+        exit "$ERR_SYS_UPDATE"
+    fi
+else
+    log "info" "Skipping OS upgrade (pass --upgrade to enable)."
 fi
 
 # =============================================================================
