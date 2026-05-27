@@ -3,6 +3,9 @@
 Test toolchain for REPEACT install script.
 
 >[!important] TODO
+> Set a flag to apply ``install.sh --upgrade`` automatically
+
+>[!important] TODO
 > Verify then update that using ``repeact-PI[IDENTIDIER]`` in target name is not creating conflicts
 
 ## Prerequisites
@@ -69,3 +72,13 @@ scp -r test/test-install.sh repeact:~/scripts && \
 ssh repeact "cd scripts && chmod +x ./install.sh ./test-install.sh" && \
 echo "repeact" | ssh repeact "sudo -S bash -c 'cd scripts && ./install.sh && ./test-install.sh'"
 ```
+---
+> [!note] First-time setup, upgrade dependencies (deprecated)
+> Pass `--upgrade` to also upgrade OS packages before installing:
+> ```bash
+> scp -r scripts repeact:~/ && \
+> scp -r config repeact:~/scripts && \
+> scp -r test/test-install.sh repeact:~/scripts && \
+> ssh repeact "cd scripts && chmod +x ./install.sh ./test-install.sh" && \
+> echo "repeact" | ssh repeact "sudo -S bash -c 'cd scripts && ./install.sh --upgrade && ./test-install.sh'"
+> ```
