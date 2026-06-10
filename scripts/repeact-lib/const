@@ -1,4 +1,7 @@
-# Required project constants
+#!/bin/bash
+# =============================================================================
+# Project constants
+# =============================================================================
 
 # Install paths
 REPEACT_DIR="/etc/repeact"
@@ -23,9 +26,9 @@ EXECUTABLES=(
 
 # Required dependencies files
 SOURCES=(
-    "repeact-lib/common.sh"
-    "repeact-lib/const.sh"
-    "repeact-lib/errors.sh"
+    "repeact-lib/common"
+    "repeact-lib/const"
+    "repeact-lib/errors"
 )
 
 # Required hardware config (DTO, in HW_CONFIG_FILE)
