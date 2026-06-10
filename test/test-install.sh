@@ -11,9 +11,9 @@ set -uo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-source "/etc/repeact/repeact-lib/errors.sh"
-source "/etc/repeact/repeact-lib/const.sh"
-source "/etc/repeact/repeact-lib/common.sh"
+source "/etc/repeact/repeact-lib/errors"
+source "/etc/repeact/repeact-lib/const"
+source "/etc/repeact/repeact-lib/common"
 
 PASS=0
 FAIL=0
