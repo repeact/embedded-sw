@@ -22,7 +22,7 @@ check() {
     local DESC="$1"
     local RESULT="$2"
 
-    if [ "$RESULT" = "ok" ]; then
+    if [[ "$RESULT" == "ok" ]]; then
         log "info" "  PASS: $DESC"
         ((PASS++))
     else
@@ -38,9 +38,9 @@ for F in "${EXECUTABLES[@]}"; do
     TARGET="$REPEACT_DIR/$F"
     LINK="$BIN_DIR/$NAME"
 
-    if [ -f "$TARGET" ]; then check "Deployed:   $TARGET" "ok"; else check "Deployed:   $TARGET" "fail"; fi
-    if [ -x "$TARGET" ]; then check "Executable: $TARGET" "ok"; else check "Executable: $TARGET" "fail"; fi
-    if [ -L "$LINK" ] && [ "$(readlink "$LINK")" = "$TARGET" ]; then
+    if [[ -f "$TARGET" ]]; then check "Deployed:   $TARGET" "ok"; else check "Deployed:   $TARGET" "fail"; fi
+    if [[ -x "$TARGET" ]]; then check "Executable: $TARGET" "ok"; else check "Executable: $TARGET" "fail"; fi
+    if [[ -L "$LINK" ]] && [[ "$(readlink "$LINK")" == "$TARGET" ]]; then
         check "Symlink:     $LINK → $TARGET" "ok"
     else
         check "Symlink:     $LINK → $TARGET" "fail"
@@ -51,12 +51,12 @@ done
 log "info" "Checking sources"
 for F in "${SOURCES[@]}"; do
     TARGET="$REPEACT_DIR/$F"
-    if [ -f "$TARGET" ]; then check "Deployed:   $TARGET" "ok"; else check "Deployed:   $TARGET" "fail"; fi
+    if [[ -f "$TARGET" ]]; then check "Deployed:   $TARGET" "ok"; else check "Deployed:   $TARGET" "fail"; fi
 done
 
 # EDID
 log "info" "Checking EDID"
-if [ -f "$REPEACT_DIR/edid.hex" ]; then check "Deployed:   $REPEACT_DIR/edid.hex" "ok"; else check "Deployed:   $REPEACT_DIR/edid.hex" "fail"; fi
+if [[ -f "$REPEACT_DIR/edid.hex" ]]; then check "Deployed:   $REPEACT_DIR/edid.hex" "ok"; else check "Deployed:   $REPEACT_DIR/edid.hex" "fail"; fi
 
 # Boot config
 log "info" "Checking boot config"
@@ -67,4 +67,4 @@ done
 # Report
 echo ""
 log "notice" "Results: $PASS passed, $FAIL failed."
-[ "$FAIL" -eq 0 ] && exit "$ERR_OK" || exit 1
+[[ "$FAIL" -eq 0 ]] && exit "$ERR_OK" || exit 1
