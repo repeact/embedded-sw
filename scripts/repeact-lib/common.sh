@@ -41,7 +41,7 @@ log() {
 }
 
 # Note: ensure that files is sourced after errors (since error dependencies)
-sudo-check() {
+sudo_check() {
     if [ "$EUID" -ne 0 ]; then
         log "err" "Must be run as root: sudo $(basename "$0")"
         exit "$ERR_SUDO"
