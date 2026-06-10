@@ -50,12 +50,12 @@ for F in "${EXECUTABLES[@]}"; do
     LINK="$BIN_DIR/$NAME"
     TARGET="$REPEACT_DIR/$F"
 
-    if [ -e "$LINK" ] && [ ! -L "$LINK" ]; then
+    if [[ -e "$LINK" ]] && [[ ! -L "$LINK" ]]; then
         log "err" "$LINK exists and is not a symlink — remove it manually and re-run."
         exit "$ERR_SYMLINK_DUPLICATE"
     fi
 
-    if [ ! -L "$LINK" ]; then
+    if [[ ! -L "$LINK" ]]; then
         if ! ln -s "$TARGET" "$LINK"; then
             log "err" "Failed to create symlink: $LINK → $TARGET"
             exit "$ERR_SYMLINK_CREATE"
@@ -89,7 +89,7 @@ fi
 # =============================================================================
 log "info" "Checking $HW_CONFIG_FILE"
 
-if [ ! -f "$HW_CONFIG_FILE" ]; then
+if [[ ! -f "$HW_CONFIG_FILE" ]]; then
     log "err" "Boot config not found: $HW_CONFIG_FILE"
     exit "$ERR_BOOT_CONF_NOT_FOUND"
 fi
@@ -109,7 +109,7 @@ done
 # =============================================================================
 echo ""
 
-if [ "$REBOOT_NEEDED" = true ]; then
+if [[ "$REBOOT_NEEDED" == true ]]; then
     log "notice" "Install complete. New boot settings added — reboot required."
     log "notice" "Run: sudo reboot"
 else
