@@ -1,4 +1,10 @@
 # Changelog
+## 0.2.1 (2026-06-13)
+
+### Refactor
+
+- **errors**: reorder and group error codes by script ranges
+
 ## 0.2.0 (2026-03-24)
 
 ### Feat
