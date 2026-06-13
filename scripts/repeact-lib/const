@@ -6,7 +6,7 @@
 # Install paths
 REPEACT_DIR="/etc/repeact"
 BIN_DIR="/usr/local/bin" # Symlinks
-CONFIG_DIR="$SCRIPT_DIR/config"
+CONFIG_DIR="/config"
 HW_CONFIG_FILE="/boot/firmware/config.txt"
 
 # Pinned dependency
