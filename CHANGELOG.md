@@ -1,4 +1,12 @@
 # Changelog
+## 0.2.2 (2026-06-13)
+
+### Refactor
+
+- patch recursive dependencies
+- **google-guideline**: match exec/lib name convention
+- **google-guidelines**: match safety guidelines
+
 ## 0.2.1 (2026-06-13)
 
 ### Refactor
