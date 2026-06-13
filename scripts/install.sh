@@ -26,7 +26,7 @@ for F in "${EXECUTABLES[@]}" "${SOURCES[@]}"; do
     mv "$SCRIPT_DIR/$F" "$REPEACT_DIR/$F"
 done
 
-mv "$CONFIG_DIR/edid.hex" "$REPEACT_DIR/edid.hex"
+mv "$SCRIPT_DIR/$CONFIG_DIR/edid.hex" "$REPEACT_DIR/edid.hex"
 
 # =============================================================================
 # Set execute permissions
