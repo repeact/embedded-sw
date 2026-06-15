@@ -32,10 +32,10 @@ log() {
     fi
     local COLOR
     case "$LEVEL" in
-    debug | info | notice) COLOR="$_COLOR_WHITE" ;;
-    warning) COLOR="$_COLOR_ORANGE" ;;
-    err) COLOR="$_COLOR_RED" ;;
-    *) COLOR="$_COLOR_RESET" ;;
+        debug | info | notice) COLOR="$_COLOR_WHITE" ;;
+        warning) COLOR="$_COLOR_ORANGE" ;;
+        err) COLOR="$_COLOR_RED" ;;
+        *) COLOR="$_COLOR_RESET" ;;
     esac
     printf "${COLOR}[%-7s]${_COLOR_RESET} %s\n" "${LEVEL^^}" "$MSG" >&2
 }
