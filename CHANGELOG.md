@@ -1,4 +1,10 @@
 # Changelog
+## 0.3.1 (2026-06-15)
+
+### Refactor
+
+- **install**: make install flag straight
+
 ## 0.3.0 (2026-06-15)
 
 ### Feat
