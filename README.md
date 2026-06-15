@@ -1,3 +1,0 @@
-# embedded-sw
-
-Repeact project.
