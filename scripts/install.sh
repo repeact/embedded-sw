@@ -6,10 +6,10 @@
 #   sudo install.sh [--pkg-update] [--pkg-upgrade]
 #
 # OPTIONS:
-#   --pkg-update    Also run apt-get update before installing dependencies.
-#                   Recommended on first install. Omit for faster re-runs.
-#   --pkg-upgrade   Also run apt-get upgrade before installing dependencies.
-#                   Recommended on first install. Omit for faster re-runs.
+#   --update    Also run apt-get update before installing dependencies.
+#               Recommended on first install. Omit for faster re-runs.
+#   --upgrade   Also run apt-get upgrade before installing dependencies.
+#               Recommended on first install. Omit for faster re-runs.
 # =============================================================================
 set -uo pipefail
 
@@ -27,10 +27,10 @@ DO_UPDATE=false
 
 for ARG in "$@"; do
     case "$ARG" in
-        --pkg-upgrade)
+        --upgrade)
             DO_UPGRADE=true
             ;;
-        --pkg-update)
+        --update)
             DO_UPDATE=true
             ;;
         *)
