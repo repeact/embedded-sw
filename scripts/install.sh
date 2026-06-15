@@ -10,8 +10,6 @@
 #                   Recommended on first install. Omit for faster re-runs.
 #   --pkg-upgrade   Also run apt-get upgrade before installing dependencies.
 #                   Recommended on first install. Omit for faster re-runs.
-#
-# Ref: "docs/archi/arch.drawio", "install-process" page.
 # =============================================================================
 set -uo pipefail
 
