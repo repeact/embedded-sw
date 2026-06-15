@@ -69,3 +69,17 @@ scp -r test/test-install.sh repeact:~/scripts && \
 ssh repeact "cd scripts && chmod +x ./install.sh ./test-install.sh" && \
 echo "repeact" | ssh repeact "sudo -S bash -c 'cd scripts && ./install.sh && ./test-install.sh'"
 ```
+
+---
+> [!note] First-time setup, update/upgrade packages dependencies
+> Pass `--pkg-update` and ``--pkg-upgrade``to upgrade OS packages before installing:
+> ```bash
+> scp -r scripts repeact:~/ && \
+> scp -r config repeact:~/scripts && \
+> scp -r test/test-install.sh repeact:~/scripts && \
+> ssh repeact "cd scripts && chmod +x ./install.sh ./test-install.sh" && \
+> echo "repeact" | \
+> ssh repeact "sudo -S bash -c 'cd scripts && \
+> ./install.sh --pkg-update --pkg-upgrade \
+> && ./test-install.sh'"
+> ```
