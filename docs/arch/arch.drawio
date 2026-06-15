@@ -333,7 +333,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="2yE0bshdXMC6kaFOjJkA" name="setup">
+  <diagram id="2yE0bshdXMC6kaFOjJkA" name="setup.old">
     <mxGraphModel dx="2050" dy="1219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -409,7 +409,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="Blek_lMWiqYoJ6xGbnrD" name="start">
+  <diagram id="Blek_lMWiqYoJ6xGbnrD" name="start.old">
     <mxGraphModel dx="2050" dy="1219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -565,7 +565,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="14PYGB8SOimhpydCZuhH" name="start-rec">
+  <diagram id="14PYGB8SOimhpydCZuhH" name="start-rec.old">
     <mxGraphModel dx="2900" dy="1219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
@@ -658,7 +658,7 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="Lh98Z4qYRt7i3-tRlxBC" name="stop-rec">
+  <diagram id="Lh98Z4qYRt7i3-tRlxBC" name="stop-rec.old">
     <mxGraphModel dx="2900" dy="1219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
