@@ -1,4 +1,4 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1" pages="7">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1" pages="9">
   <diagram id="cyBWLUTcGdMoHFRT1lLp" name="legend">
     <mxGraphModel dx="1414" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -99,7 +99,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="uTseRdfqLI3VANz-JNwh" name="system-behavior">
-    <mxGraphModel dx="2092" dy="2939" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2558" dy="3216" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -507,7 +507,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="qO74gSqQryegVfeUCxf4" name="start-rec">
-    <mxGraphModel dx="1670" dy="488" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2264" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -626,11 +626,22 @@
         <mxCell id="zRfrgf8HSi7knQb4sLn_-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: shall PID export be double checked and throw a failing error" vertex="1">
           <mxGeometry height="80" width="280" x="100" y="410" as="geometry" />
         </mxCell>
+        <mxCell id="dQLIDGjSmPccfHOYdbHt-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="start sanity check service" vertex="1">
+          <mxGeometry height="100" width="180" x="740" y="530" as="geometry">
+            <mxRectangle height="30" width="180" x="740" y="530" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dQLIDGjSmPccfHOYdbHt-2" parent="dQLIDGjSmPccfHOYdbHt-1" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontStyle=1" value="TBD" vertex="1">
+          <mxGeometry height="30" width="140" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="dQLIDGjSmPccfHOYdbHt-5" edge="1" parent="1" source="v73fKPlwsJNRMwmJxCuc-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="dQLIDGjSmPccfHOYdbHt-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram name="stop-record" id="6edFWhD8LnRnJt5O_0u4">
-    <mxGraphModel dx="3408" dy="1017" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4112" dy="1434" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="JvjgLW2-jj0tV9Zj5Y3L-0" />
         <mxCell id="JvjgLW2-jj0tV9Zj5Y3L-1" parent="JvjgLW2-jj0tV9Zj5Y3L-0" />
@@ -708,15 +719,6 @@
         <mxCell id="JvjgLW2-jj0tV9Zj5Y3L-26" parent="JvjgLW2-jj0tV9Zj5Y3L-23" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="ERR_OK" vertex="1">
           <mxGeometry height="20" width="110" x="90" y="105" as="geometry" />
         </mxCell>
-        <mxCell id="JvjgLW2-jj0tV9Zj5Y3L-30" parent="JvjgLW2-jj0tV9Zj5Y3L-1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#bac8d3;strokeColor=#23445d;" value="" vertex="1">
-          <mxGeometry height="30" width="29" x="-280" y="580" as="geometry" />
-        </mxCell>
-        <mxCell id="JvjgLW2-jj0tV9Zj5Y3L-31" edge="1" parent="JvjgLW2-jj0tV9Zj5Y3L-1" source="JvjgLW2-jj0tV9Zj5Y3L-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#bac8d3;strokeColor=#23445d;" target="JvjgLW2-jj0tV9Zj5Y3L-30">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-            <mxPoint x="-80" y="455" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="JvjgLW2-jj0tV9Zj5Y3L-32" edge="1" parent="JvjgLW2-jj0tV9Zj5Y3L-1" source="JvjgLW2-jj0tV9Zj5Y3L-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="JvjgLW2-jj0tV9Zj5Y3L-24">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -752,6 +754,73 @@
         </mxCell>
         <mxCell id="kEhAxUQ-QWxzN9BuCjFb-0" parent="JvjgLW2-jj0tV9Zj5Y3L-1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=10;strokeWidth=1;fontSize=12;container=0;" value="&lt;b&gt;GPIO event&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="90" x="-1130" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="Qx7DnKyQ89fhtrKi1m9v-0" parent="JvjgLW2-jj0tV9Zj5Y3L-1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="stop sanity check service" vertex="1">
+          <mxGeometry height="100" width="180" x="-260" y="530" as="geometry">
+            <mxRectangle height="30" width="180" x="740" y="530" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qx7DnKyQ89fhtrKi1m9v-1" parent="Qx7DnKyQ89fhtrKi1m9v-0" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fontStyle=1" value="TBD" vertex="1">
+          <mxGeometry height="30" width="140" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Qx7DnKyQ89fhtrKi1m9v-2" edge="1" parent="JvjgLW2-jj0tV9Zj5Y3L-1" source="JvjgLW2-jj0tV9Zj5Y3L-24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="Qx7DnKyQ89fhtrKi1m9v-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="3h1ZnZeHtj6VbYAlyjnt" name="sanity-check">
+    <mxGraphModel dx="820" dy="488" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EGC5Ac-cZiWo25H7m8iB-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="check HW bridge available and configured" vertex="1">
+          <mxGeometry height="100" width="300" x="250" y="600" as="geometry">
+            <mxRectangle height="30" width="300" x="250" y="600" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EGC5Ac-cZiWo25H7m8iB-2" parent="EGC5Ac-cZiWo25H7m8iB-1" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;TBD&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="260" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3eFmv6ZLeNvnvHn1MKKL-1" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.08333333333333333;strokeWidth=1;fontSize=12;" value="&lt;div&gt;&lt;b&gt;During REC&lt;/b&gt;&lt;/div&gt;Periodic" vertex="1">
+          <mxGeometry height="30" width="120" x="220" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="WNO_6MtTvz6e-HR1jjuG-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: Behavior&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Hints: consistency of:&lt;/i&gt;&lt;/span&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;PID&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Device settings&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;...&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="300" x="250" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="3AnRFiP2b285n5rFrXlu-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: Error handling" vertex="1">
+          <mxGeometry height="30" width="300" x="250" y="400" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="1zK8xQbqAM4mn9q-Vssl" name="system-cleanup">
+    <mxGraphModel dx="976" dy="580" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PtijjatIY93ae3-QzJ41-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Clean system to avoid misc errors&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;(hot-unplug could set device in unstable state)&lt;/i&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="300" x="250" y="750" as="geometry">
+            <mxRectangle height="30" width="300" x="250" y="600" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PtijjatIY93ae3-QzJ41-2" parent="PtijjatIY93ae3-QzJ41-1" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;TBD&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="260" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="PtijjatIY93ae3-QzJ41-3" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.08333333333333333;strokeWidth=1;fontSize=12;" value="&lt;div&gt;&lt;b&gt;Boot/Shutdown&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="180" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="PtijjatIY93ae3-QzJ41-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: Behavior&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Hints: consistency of:&lt;/i&gt;&lt;/span&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Clean all shared files (device settings, PID)&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Ensure and kill all phantom processes&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;...&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="300" x="250" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="PtijjatIY93ae3-QzJ41-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: Error handling" vertex="1">
+          <mxGeometry height="30" width="300" x="250" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="H8AfZNfOxRAzQl6sEP9i-1" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=10;strokeWidth=1;fontSize=12;container=0;" value="&lt;b&gt;HMDI&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;hot-unplug&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="110" x="500" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="H8AfZNfOxRAzQl6sEP9i-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: Shall be called by init/stop ?&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;Hints: could be called at init and/or stop.&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;Script caller shall be documented and defined !&amp;nbsp;&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="300" x="250" y="460" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
