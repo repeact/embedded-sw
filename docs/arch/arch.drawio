@@ -79,8 +79,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="sxnvFsYIrM7q8FHlZ7pK" name="install-process">
-    <mxGraphModel dx="3422" dy="1001" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram id="sxnvFsYIrM7q8FHlZ7pK" name="install">
+    <mxGraphModel dx="3408" dy="1016" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -333,8 +333,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="2yE0bshdXMC6kaFOjJkA" name="setup-process">
-    <mxGraphModel dx="1377" dy="801" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram id="2yE0bshdXMC6kaFOjJkA" name="setup">
+    <mxGraphModel dx="2050" dy="1219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -409,8 +409,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="Blek_lMWiqYoJ6xGbnrD" name="start-process">
-    <mxGraphModel dx="2066" dy="1201" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram id="Blek_lMWiqYoJ6xGbnrD" name="start">
+    <mxGraphModel dx="2050" dy="1219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -565,8 +565,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="14PYGB8SOimhpydCZuhH" name="rec-process">
-    <mxGraphModel dx="2275" dy="828" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram id="14PYGB8SOimhpydCZuhH" name="start-rec">
+    <mxGraphModel dx="2900" dy="1219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -658,8 +658,8 @@
       </root>
     </mxGraphModel>
   </diagram>
-  <diagram id="Lh98Z4qYRt7i3-tRlxBC" name="stop-rec-process">
-    <mxGraphModel dx="2031" dy="686" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <diagram id="Lh98Z4qYRt7i3-tRlxBC" name="stop-rec">
+    <mxGraphModel dx="2900" dy="1219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
