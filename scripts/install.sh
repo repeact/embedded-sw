@@ -2,6 +2,15 @@
 # =============================================================================
 # One-time system install for REPEACT package
 #
+# USAGE:
+#   sudo install.sh [--pkg-update] [--pkg-upgrade]
+#
+# OPTIONS:
+#   --pkg-update    Also run apt-get update before installing dependencies.
+#                   Recommended on first install. Omit for faster re-runs.
+#   --pkg-upgrade   Also run apt-get upgrade before installing dependencies.
+#                   Recommended on first install. Omit for faster re-runs.
+#
 # Ref: "docs/archi/arch.drawio", "install-process" page.
 # =============================================================================
 set -uo pipefail
@@ -11,6 +20,28 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$SCRIPT_DIR/repeact-lib/errors"
 source "$SCRIPT_DIR/repeact-lib/const"
 source "$SCRIPT_DIR/repeact-lib/common"
+
+# =============================================================================
+# Parse arguments
+# =============================================================================
+DO_UPGRADE=false
+DO_UPDATE=false
+
+for ARG in "$@"; do
+    case "$ARG" in
+        --pkg-upgrade)
+            DO_UPGRADE=true
+            ;;
+        --pkg-update)
+            DO_UPDATE=true
+            ;;
+        *)
+            log "err" "Unknown option: $ARG"
+            log "info" "Usage: sudo install.sh [--upgrade]"
+            exit "$ERR_INVALID_ARG"
+            ;;
+    esac
+done
 
 sudo-check
 
@@ -65,13 +96,32 @@ for F in "${EXECUTABLES[@]}"; do
 done
 
 # =============================================================================
-# Refresh package index
+# Refresh package index (optionnal, highly recommended for first install)
+#
+# Use "--pkg-update" flag to enable
 # =============================================================================
-log "info" "Refreshing package index"
-
-if ! apt-get update -q; then
-    log "err" "apt-get update failed."
-    exit "$ERR_SYS_UPDATE"
+if [[ "$DO_UPDATE" = true ]]; then
+    log "info" "Refreshing package index"
+    if ! apt-get update -q; then
+        log "err" "apt-get update failed."
+        exit "$ERR_SYS_UPDATE"
+    fi
+else
+    log "info" "Skipping OS update (pass --pkg-update to enable)."
+fi
+# =============================================================================
+# Upgrade OS packages (optional)
+#
+# Use --pkg-upgrade flag to enable)
+# =============================================================================
+if [[ "$DO_UPGRADE" = true ]]; then
+    log "info" "Upgrading OS packages"
+    if ! apt-get upgrade -y -q; then
+        log "err" "apt-get upgrade failed."
+        exit "$ERR_SYS_UPGRADE"
+    fi
+else
+    log "info" "Skipping OS upgrade (pass --pkg-upgrade to enable)."
 fi
 
 # =============================================================================
