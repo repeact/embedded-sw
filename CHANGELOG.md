@@ -1,4 +1,10 @@
 # Changelog
+## 0.3.0 (2026-06-15)
+
+### Feat
+
+- **install**: add upgrade and update flags
+
 ## 0.2.2 (2026-06-13)
 
 ### Refactor
