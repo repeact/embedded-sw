@@ -41,7 +41,7 @@ for ARG in "$@"; do
     esac
 done
 
-sudo-check
+sudo_check
 
 # =============================================================================
 # Deploy files
