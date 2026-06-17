@@ -9,18 +9,18 @@
 # =============================================================================
 set -uo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+declare -r INSTALL_DIR="/etc/repeact" # bootstrap — redefined by const.sh
 
-source "/etc/repeact/repeact-lib/errors"
-source "/etc/repeact/repeact-lib/const"
-source "/etc/repeact/repeact-lib/common"
+source "$INSTALL_DIR/lib/errors"
+source "$INSTALL_DIR/lib/const"
+source "$INSTALL_DIR/lib/common"
 
-PASS=0
-FAIL=0
+declare -i PASS=0
+declare -i FAIL=0
 
 check() {
-    local DESC="$1"
-    local RESULT="$2"
+    declare -r DESC="$1"
+    declare -r RESULT="$2"
 
     if [[ "$RESULT" == "ok" ]]; then
         log "info" "  PASS: $DESC"
@@ -31,13 +31,12 @@ check() {
     fi
 }
 
-# Executables
 log "info" "Checking executables"
+declare NAME TARGET LINK
 for F in "${EXECUTABLES[@]}"; do
     NAME="${F%.sh}"
-    TARGET="$REPEACT_DIR/$F"
-    LINK="$BIN_DIR/$NAME"
-
+    TARGET="$INSTALL_DIR/$F"
+    LINK="$SYMLINK_DIR/$NAME"
     if [[ -f "$TARGET" ]]; then check "Deployed:   $TARGET" "ok"; else check "Deployed:   $TARGET" "fail"; fi
     if [[ -x "$TARGET" ]]; then check "Executable: $TARGET" "ok"; else check "Executable: $TARGET" "fail"; fi
     if [[ -L "$LINK" ]] && [[ "$(readlink "$LINK")" == "$TARGET" ]]; then
@@ -50,13 +49,14 @@ done
 # Sources
 log "info" "Checking sources"
 for F in "${SOURCES[@]}"; do
-    TARGET="$REPEACT_DIR/$F"
+    TARGET="$INSTALL_DIR/$F"
     if [[ -f "$TARGET" ]]; then check "Deployed:   $TARGET" "ok"; else check "Deployed:   $TARGET" "fail"; fi
 done
 
 # EDID
 log "info" "Checking EDID"
-if [[ -f "$REPEACT_DIR/edid.hex" ]]; then check "Deployed:   $REPEACT_DIR/edid.hex" "ok"; else check "Deployed:   $REPEACT_DIR/edid.hex" "fail"; fi
+TARGET="$CONFIG_DIR/$EDID_FILE"
+if [[ -f "$TARGET" ]]; then check "Deployed: $TARGET" "ok"; else check "Deployed: $TARGET" "fail"; fi
 
 # Boot config
 log "info" "Checking boot config"

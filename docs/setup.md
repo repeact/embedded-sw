@@ -84,8 +84,7 @@ Recommended on a fresh device:
 -  `--upgrade` to run `apt-get upgrade` 
 
 ```bash
-scp -r scripts repeact:~/ && \
-scp -r config repeact:~/scripts && \
+scp -r scripts config repeact:~/ && \
 ssh repeact "chmod +x ~/scripts/install.sh" && \
 echo "repeact" | ssh repeact "sudo -S ~/scripts/install.sh --update --upgrade"
 ```
@@ -96,8 +95,7 @@ Skips OS upgrade step for faster execution.
 Use once device has already been fully updated.
 
 ```bash
-scp -r scripts repeact:~/ && \
-scp -r config repeact:~/scripts && \
+scp -r scripts config repeact:~/ && \
 ssh repeact "chmod +x ~/scripts/install.sh" && \
 echo "repeact" | ssh repeact "sudo -S ~/scripts/install.sh"
 ```
