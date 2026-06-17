@@ -13,17 +13,17 @@
 # =============================================================================
 set -uo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+declare -r DEPLOY_SRC="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-source "$SCRIPT_DIR/repeact-lib/errors"
-source "$SCRIPT_DIR/repeact-lib/const"
-source "$SCRIPT_DIR/repeact-lib/common"
+source "$DEPLOY_SRC/lib/errors"
+source "$DEPLOY_SRC/lib/const"
+source "$DEPLOY_SRC/lib/common"
 
 # =============================================================================
 # Parse arguments
 # =============================================================================
-DO_UPGRADE=false
-DO_UPDATE=false
+declare DO_UPGRADE=false
+declare DO_UPDATE=false
 
 for ARG in "$@"; do
     case "$ARG" in
@@ -46,16 +46,17 @@ sudo-check
 # =============================================================================
 # Deploy files
 # =============================================================================
-log "info" "Deploying files to $REPEACT_DIR"
+log "info" "Deploying files to $INSTALL_DIR"
 
-mkdir -p "$REPEACT_DIR"
-mkdir -p "$REPEACT_DIR/repeact-lib"
+mkdir -p "$INSTALL_DIR"
+mkdir -p "$INSTALL_DIR/lib"
+mkdir -p "$CONFIG_DIR"
 
 for F in "${EXECUTABLES[@]}" "${SOURCES[@]}"; do
-    mv "$SCRIPT_DIR/$F" "$REPEACT_DIR/$F"
+    mv "$DEPLOY_SRC/$F" "$INSTALL_DIR/$F"
 done
 
-mv "$SCRIPT_DIR/$CONFIG_DIR/edid.hex" "$REPEACT_DIR/edid.hex"
+mv "config/$EDID_FILE" "$CONFIG_DIR/$EDID_FILE"
 
 # =============================================================================
 # Set execute permissions
@@ -63,8 +64,8 @@ mv "$SCRIPT_DIR/$CONFIG_DIR/edid.hex" "$REPEACT_DIR/edid.hex"
 log "info" "Setting execute permissions"
 
 for F in "${EXECUTABLES[@]}"; do
-    if ! chmod +x "$REPEACT_DIR/$F"; then
-        log "err" "chmod +x failed: $REPEACT_DIR/$F"
+    if ! chmod +x "$INSTALL_DIR/$F"; then
+        log "err" "chmod +x failed: $INSTALL_DIR/$F"
         exit "$ERR_EXECUTE_PERMISSION_DENIED"
     fi
 done
@@ -72,12 +73,13 @@ done
 # =============================================================================
 # Create symlinks
 # =============================================================================
-log "info" "Creating symlinks in $BIN_DIR"
+log "info" "Creating symlinks in $SYMLINK_DIR"
 
+declare NAME LINK TARGET
 for F in "${EXECUTABLES[@]}"; do
     NAME="${F%.sh}"
-    LINK="$BIN_DIR/$NAME"
-    TARGET="$REPEACT_DIR/$F"
+    LINK="$SYMLINK_DIR/$NAME"
+    TARGET="$INSTALL_DIR/$F"
 
     if [[ -e "$LINK" ]] && [[ ! -L "$LINK" ]]; then
         log "err" "$LINK exists and is not a symlink — remove it manually and re-run."
@@ -142,7 +144,7 @@ if [[ ! -f "$HW_CONFIG_FILE" ]]; then
     exit "$ERR_BOOT_CONF_NOT_FOUND"
 fi
 
-REBOOT_NEEDED=false
+declare REBOOT_NEEDED=false
 
 for LINE in "${SETTINGS[@]}"; do
     if ! grep -qxF "$LINE" "$HW_CONFIG_FILE"; then
