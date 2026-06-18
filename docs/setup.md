@@ -2,15 +2,21 @@
 
 - [Setup project](#setup-project)
   - [Project prerequisite: HW and workspace setup](#project-prerequisite-hw-and-workspace-setup)
+    - [Install make](#install-make)
     - [Generate an SSH RSA key](#generate-an-ssh-rsa-key)
     - [RPi OS setup](#rpi-os-setup)
     - [SSH host/remote link](#ssh-hostremote-link)
     - [Setup validation](#setup-validation)
   - [Installation and deployment, from host to remote](#installation-and-deployment-from-host-to-remote)
+    - [Make autocompletion](#make-autocompletion)
       - [First install](#first-install)
       - [Re-runs](#re-runs)
 
 ## Project prerequisite: HW and workspace setup
+
+### Install make
+
+To use deployment/test toolchain, ``make`` is required and shall be downloaded.
 
 ### Generate an SSH RSA key
 
@@ -70,6 +76,15 @@ Accept the device fingerprint when prompted.
 
 ## Installation and deployment, from host to remote
 
+### Make autocompletion
+
+Edit or create etiher ``.bashrc`` or ``.bash_profile``, in your home directory ``~/``.  
+Add this line: 
+```
+complete -W "\`grep -oE '^[a-zA-Z0-9_.-]+:([^=]|$)' ?akefile | sed 's/[^a-zA-Z0-9_.-]*$//'\`" make
+```  
+And source the new config with ``source ~/.bashrc`` or ``source ~/.bash_profile``
+
 > [!IMPORTANT]
 > Adapt the remote host
 > Replace `repeact` with the actual host name of your target device (e.g. `repeact-PI01`).  
@@ -77,27 +92,19 @@ Accept the device fingerprint when prompted.
 
 Run all commands from project root folder (default: `embedded-sw`).
 
+> [!NOTE] 
+> You can specify your device hostname/sudo password using ``DEVICE_NAME`` and ``SUDO`` optionnal arguments.  
+> Defaults to: see [Makefile](../Makefile)
+
 #### First install
 
-Recommended on a fresh device:
--  `--update` to run `apt-get update` 
--  `--upgrade` to run `apt-get upgrade` 
+Run in shell make ``first-install``
 
-```bash
-scp -r scripts config repeact:~/ && \
-ssh repeact "chmod +x ~/scripts/install.sh" && \
-echo "repeact" | ssh repeact "sudo -S ~/scripts/install.sh --update --upgrade"
-```
+Difference with raw ``install`` is the added ``--update`` and ``--upgrade`` flags.  
+Which will run the equivalent ``apt`` commands.
 
 #### Re-runs
 
-Skips OS upgrade step for faster execution.  
-Use once device has already been fully updated.
-
-```bash
-scp -r scripts config repeact:~/ && \
-ssh repeact "chmod +x ~/scripts/install.sh" && \
-echo "repeact" | ssh repeact "sudo -S ~/scripts/install.sh"
-```
+Run in a shell make ``install``  
 
 To verify installation, refer to the [run tests](tests.md) documentation.
