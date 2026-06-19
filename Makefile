@@ -15,6 +15,6 @@ first-install:
 	echo "$(SUDO)" | ssh $(DEVICE_NAME) "sudo -S ~/scripts/install.sh --update --upgrade"
 
 test-install:
-	scp test/test-install.sh $(DEVICE_NAME):~/scripts && \
-	ssh $(DEVICE_NAME) "chmod +x ~/scripts/test-install.sh" && \
-	echo "$(SUDO)" | ssh $(DEVICE_NAME) "sudo -S ~/scripts/test-install.sh"
+	scp -r test/test-install.sh scripts/lib $(DEVICE_NAME):~/test && \
+	ssh $(DEVICE_NAME) "chmod +x ~/test/test-install.sh" && \
+	echo "$(SUDO)" | ssh $(DEVICE_NAME) "sudo -S ~/test/test-install.sh"
