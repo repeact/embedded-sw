@@ -9,11 +9,11 @@
 # =============================================================================
 set -uo pipefail
 
-declare -r INSTALL_DIR="/etc/repeact" # bootstrap — redefined by const.sh
+declare -r TEST_SRC="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-source "$INSTALL_DIR/lib/errors"
-source "$INSTALL_DIR/lib/const"
-source "$INSTALL_DIR/lib/common"
+source "$TEST_SRC/lib/errors"
+source "$TEST_SRC/lib/const"
+source "$TEST_SRC/lib/common"
 
 declare -i PASS=0
 declare -i FAIL=0
