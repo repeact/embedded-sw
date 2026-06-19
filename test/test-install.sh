@@ -88,7 +88,8 @@ main() {
     check_boot_config
     report_test_results
 
-    exit "$ERR_OK"
+    # Exit handled by report
+    # Could be discussed
 }
 
 main
