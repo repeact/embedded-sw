@@ -9,11 +9,11 @@
 # =============================================================================
 set -uo pipefail
 
-declare -r TEST_SRC="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+declare -r TOOLCHAIN_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-source "$TEST_SRC/lib/errors"
-source "$TEST_SRC/lib/const"
-source "$TEST_SRC/lib/common"
+source "$TOOLCHAIN_DIR/lib/errors"
+source "$TOOLCHAIN_DIR/lib/const"
+source "$TOOLCHAIN_DIR/lib/common"
 
 declare -i PASS=0
 declare -i FAIL=0
