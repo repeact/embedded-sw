@@ -1,4 +1,28 @@
 # Changelog
+## 0.3.0 (2026-06-21)
+
+### Feat
+
+- **install**: add upgrade and update flags
+
+### Fix
+
+- **install**: patch function declaration and call conflict
+- **dependencies**: fix recursive dependencies sourcing
+
+### Refactor
+
+- **targets**: update make recipes w/ new tooclchain setup
+- **toolchain**: group all toolchain related script
+- **test-install**: extract sections into functions
+- **install**: extract sections into functions
+- **lib**: remove shebangs from sourced files
+- **lib**: strengthen constants declaration and naming
+- **install**: make install flag straight
+- **google-guideline**: match exec/lib name convention
+- **google-guidelines**: match safety guidelines
+- **errors**: reorder and group error codes by script ranges
+
 ## 0.2.0 (2026-03-24)
 
 ### Feat
