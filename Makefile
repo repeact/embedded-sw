@@ -3,22 +3,20 @@
 DEVICE_NAME ?= repeact
 SUDO ?= repeact
 
-install:
-# Deploy "package" life files only.
-# Deploy install "toolchain" with its own copy of dependencies (lib)
-	scp -r scripts config $(DEVICE_NAME):~/ && \
+_deploy-pkg:
+	scp -r scripts config $(DEVICE_NAME):~/
+
+_deploy-toolchain:
 	scp -r tools $(DEVICE_NAME):~/ && \
 	scp -r scripts/lib $(DEVICE_NAME):~/tools && \
 	ssh $(DEVICE_NAME) "chmod +x ~/tools/install.sh" && \
-	echo "$(SUDO)" | ssh $(DEVICE_NAME) "sudo -S ~/tools/install.sh"
+	ssh $(DEVICE_NAME) "chmod +x ~/tools/test-install.sh"
 
-first-install:
-	scp -r scripts config $(DEVICE_NAME):~/ && \
-	ssh $(DEVICE_NAME) "chmod +x ~/scripts/install.sh" && \
+first-install: _deploy-pkg _deploy-toolchain
 	echo "$(SUDO)" | ssh $(DEVICE_NAME) "sudo -S ~/scripts/install.sh --update --upgrade"
 
-test-install:
-	scp -r tools $(DEVICE_NAME):~/ && \
-	scp -r scripts/lib $(DEVICE_NAME):~/tools && \
-	ssh $(DEVICE_NAME) "chmod +x ~/tools/test-install.sh" && \
+install: _deploy-pkg _deploy-toolchain
+	echo "$(SUDO)" | ssh $(DEVICE_NAME) "sudo -S ~/tools/install.sh"
+
+test-install: _deploy-toolchain
 	echo "$(SUDO)" | ssh $(DEVICE_NAME) "sudo -S ~/tools/test-install.sh"
