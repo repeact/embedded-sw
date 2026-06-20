@@ -13,11 +13,13 @@
 # =============================================================================
 set -uo pipefail
 
-declare -r DEPLOY_SRC="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+declare -r TOOLCHAIN_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-source "$DEPLOY_SRC/lib/errors"
-source "$DEPLOY_SRC/lib/const"
-source "$DEPLOY_SRC/lib/common"
+declare -r DEPLOY_SRC="${DEPLOY_SRC:-$(cd "$TOOLCHAIN_DIR/../scripts" && pwd)}"
+
+source "$TOOLCHAIN_DIR/lib/errors"
+source "$TOOLCHAIN_DIR/lib/const"
+source "$TOOLCHAIN_DIR/lib/common"
 
 # =============================================================================
 # Parse arguments
