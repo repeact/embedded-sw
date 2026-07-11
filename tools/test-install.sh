@@ -18,6 +18,9 @@ source "$TOOLCHAIN_DIR/lib/common"
 declare -i PASS=0
 declare -i FAIL=0
 
+# =============================================================================
+# Test report utility
+# =============================================================================
 check() {
     declare -r DESC="$1"
     declare -r RESULT="$2"
@@ -30,10 +33,12 @@ check() {
     fi
 }
 
+# =============================================================================
 # Ensure that packages scripts:
 #   - are deployed in expected package location
 #   - are executable (chmod +x)
 #   - have a properly symlink assigned
+# =============================================================================
 check_executables() {
     log "info" "Checking executables"
     declare NAME TARGET LINK
@@ -51,7 +56,9 @@ check_executables() {
     done
 }
 
+# =============================================================================
 # Check packages sources (lib: common, const, errors) deployment (location)
+# =============================================================================
 check_sources() {
     log "info" "Checking sources"
     for F in "${SOURCES[@]}"; do
@@ -59,15 +66,17 @@ check_sources() {
         if [[ -f "$TARGET" ]]; then check "Deployed:   $TARGET" "ok"; else check "Deployed:   $TARGET" "fail"; fi
     done
 }
-
+# =============================================================================
 # Check edid deployment (location)
+# =============================================================================
 check_edid() {
     log "info" "Checking EDID"
     TARGET="$CONFIG_DIR/$EDID_FILE"
     if [[ -f "$TARGET" ]]; then check "Deployed: $TARGET" "ok"; else check "Deployed: $TARGET" "fail"; fi
 }
-
+# =============================================================================
 # Check boot config has been properly modified (DTOs)
+# =============================================================================
 check_boot_config() {
     log "info" "Checking boot config"
     for LINE in "${SETTINGS[@]}"; do
