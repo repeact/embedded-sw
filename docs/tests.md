@@ -2,7 +2,8 @@
 
 Utility to quickly refer to when running tests.
 - [Run tests](#run-tests)
-  - [Deployment test (installation)](#deployment-test-installation)
+  - [Deployment](#deployment)
+    - [Install](#install)
 
 
 > [!NOTE]
@@ -15,11 +16,8 @@ Replace the password literal `repeact` in `echo "repeact" |` with the actual `ro
 
 Run all commands from project root folder (default: `embedded-sw`).
 
-## Deployment test (installation)
+## Deployment 
 
-Run
-```bash
-scp test/test-install.sh repeact:~/scripts && \
-ssh repeact "chmod +x ~/scripts/test-install.sh" && \
-echo "repeact" | ssh repeact "sudo -S ~/scripts/test-install.sh"
-```
+### Install
+
+Run in a shell ``make test-install``  
