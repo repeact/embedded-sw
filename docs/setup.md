@@ -99,14 +99,14 @@ Run all commands from project root folder (default: `embedded-sw`).
 
 #### First install
 
-Run in shell make ``first-install``
+Run in shell ``make first-install``
 
 Difference with raw ``install`` is the added ``--update`` and ``--upgrade`` flags.  
 Which will run the equivalent ``apt`` commands.
 
 #### Re-runs
 
-Run in a shell make ``install``  
+Run in a shell ``make install``  
 
 To verify installation, refer to the [run tests](tests.md) documentation.
 
