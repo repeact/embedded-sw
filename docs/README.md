@@ -3,9 +3,17 @@
 HDMI recorder for movie script supervisors.
 
 - [Repeact recorder (embedded-sw)](#repeact-recorder-embedded-sw)
+  - [Project commit ruleset](#project-commit-ruleset)
   - [Setup and run project](#setup-and-run-project)
   - [Run tests](#run-tests)
   - [GitHub Actions runner](#github-actions-runner)
+
+## Project commit ruleset
+
+[Project commit convention](commits-style.md).  
+
+> [!WARNING]
+> Each commit on this repo **shall** follow/comply with this ruleset. 
 
 ## Setup and run project
 
