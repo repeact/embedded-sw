@@ -11,6 +11,7 @@
     - [Make autocompletion](#make-autocompletion)
       - [First install](#first-install)
       - [Re-runs](#re-runs)
+      - [Uninstall](#uninstall)
 
 ## Project prerequisite: HW and workspace setup
 
@@ -108,3 +109,11 @@ Which will run the equivalent ``apt`` commands.
 Run in a shell make ``install``  
 
 To verify installation, refer to the [run tests](tests.md) documentation.
+
+#### Uninstall
+
+Run in a shell ``make uninstall``  
+
+> [!NOTE] 
+> For this script no arch update has been made since script is self explaining. If complexity increases a dedicated ``uninstall`` arch shall be made.
+> Also no test-uninstall has been made for faster development. Having this kind of script is not relevant because "package" will be migrated to a debian package.
