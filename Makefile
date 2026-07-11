@@ -10,7 +10,8 @@ _deploy-toolchain:
 	scp -r tools $(DEVICE_NAME):~/ && \
 	scp -r scripts/lib $(DEVICE_NAME):~/tools && \
 	ssh $(DEVICE_NAME) "chmod +x ~/tools/install.sh" && \
-	ssh $(DEVICE_NAME) "chmod +x ~/tools/test-install.sh"
+	ssh $(DEVICE_NAME) "chmod +x ~/tools/test-install.sh" && \
+	ssh $(DEVICE_NAME) "chmod +x ~/tools/uninstall.sh"
 
 first-install: _deploy-pkg _deploy-toolchain
 	echo "$(SUDO)" | ssh $(DEVICE_NAME) "sudo -S ~/scripts/install.sh --update --upgrade"
@@ -20,3 +21,6 @@ install: _deploy-pkg _deploy-toolchain
 
 test-install: _deploy-toolchain
 	echo "$(SUDO)" | ssh $(DEVICE_NAME) "sudo -S ~/tools/test-install.sh"
+
+uninstall: _deploy-toolchain
+	echo "$(SUDO)" | ssh $(DEVICE_NAME) "sudo -S ~/tools/uninstall.sh"
