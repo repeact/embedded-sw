@@ -4,7 +4,7 @@ DEVICE_NAME ?= repeact
 SUDO ?= repeact
 
 _deploy-pkg:
-	scp -r scripts config $(DEVICE_NAME):~/
+	scp -r scripts config deploy $(DEVICE_NAME):~/
 
 _deploy-toolchain:
 	scp -r tools $(DEVICE_NAME):~/ && \
