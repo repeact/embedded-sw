@@ -24,6 +24,25 @@ rm -rf "$INSTALL_DIR"
 # Remove symlinks
 rm "$SYMLINK_DIR/*"
 
+# Stop and disable services before removing them
+for F in "${SERVICES[@]}"; do
+    systemctl stop "$F" 2> /dev/null
+    systemctl disable "$F" 2> /dev/null
+done
+
+# Remove deployed:
+# - services
+# - udev rules
+for F in "${SERVICES[@]}"; do
+    rm -f "$SYSTEMD_DIR/$F"
+done
+for F in "${RULES[@]}"; do
+    rm -f "$UDEV_RULES_DIR/$F"
+done
+
+systemctl daemon-reload
+udevadm control --reload-rules
+
 # Remove boot config
 log "info" "Checking $HW_CONFIG_FILE"
 if [[ ! -f "$HW_CONFIG_FILE" ]]; then
