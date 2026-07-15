@@ -4,6 +4,8 @@
 
 # Install paths
 declare -gr INSTALL_DIR="/etc/repeact"
+declare -gr SYSTEMD_DIR="/etc/systemd/system"
+declare -gr UDEV_RULES_DIR="/etc/udev/rules.d"
 declare -gr SYMLINK_DIR="/usr/local/bin"
 declare -gr CONFIG_DIR="$INSTALL_DIR/config"
 declare -gr HW_CONFIG_FILE="/boot/firmware/config.txt"
@@ -27,6 +29,12 @@ declare -gra SOURCES=(
     "lib/common"
     "lib/const"
     "lib/errors"
+)
+
+declare -gra SERVICES=(
+)
+
+declare -gra RULES=(
 )
 
 # Required hardware config

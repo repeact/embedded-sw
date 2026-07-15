@@ -16,6 +16,7 @@ set -uo pipefail
 declare -r TOOLCHAIN_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 declare -r DEPLOY_SRC="${DEPLOY_SRC:-$(cd "$TOOLCHAIN_DIR/../scripts" && pwd)}"
+declare -r UNITS_SRC="${UNITS_SRC:-$(cd "$TOOLCHAIN_DIR/../deploy" && pwd)}"
 
 source "$TOOLCHAIN_DIR/lib/errors"
 source "$TOOLCHAIN_DIR/lib/const"
@@ -61,6 +62,24 @@ deploy_files() {
 
     mv "config/$EDID_FILE" "$CONFIG_DIR/$EDID_FILE"
 
+}
+
+# =============================================================================
+# Deploy units (systemd services, udev rules)
+# =============================================================================
+deploy_units() {
+    log "info" "Deploying units to systemd/udev $SYSTEMD_DIR/$UDEV_RULES_DIR"
+
+    for F in "${SERVICES[@]}"; do
+        mv "$UNITS_SRC/$F" "$SYSTEMD_DIR/$F"
+    done
+
+    for F in "${RULES[@]}"; do
+        mv "$UNITS_SRC/$F" "$UDEV_RULES_DIR/$F"
+    done
+
+    systemctl daemon-reload
+    udevadm control --reload-rules
 }
 
 # =============================================================================
@@ -188,6 +207,7 @@ main() {
     sudo_check
     parse_args "$@"
     deploy_files
+    deploy_units
     set_permission
     create_symlinks
     update_packages  # optionnal: use --update
