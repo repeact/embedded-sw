@@ -1,17 +1,17 @@
-<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1" pages="9">
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1" pages="8">
   <diagram id="cyBWLUTcGdMoHFRT1lLp" name="legend">
-    <mxGraphModel dx="1181" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1722" dy="1029" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="0IojM4VMJ2cg4HDPslQq-3" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.07692307692307693;strokeWidth=1;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Service&lt;/b&gt;&lt;br&gt;systemd&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="110" x="530" y="440" as="geometry" />
+        <mxCell id="0IojM4VMJ2cg4HDPslQq-3" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.07142857142857142;strokeWidth=1;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;Systemd service&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="140" x="500" y="480" as="geometry" />
         </mxCell>
         <mxCell id="CPWvj1p8RpvfgKKxKEmV-2" parent="1" style="whiteSpace=wrap;html=1;align=right;spacingRight=4;" value="Script starting&lt;div&gt;or ending point&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="140" x="500" y="230" as="geometry" />
         </mxCell>
         <mxCell id="0IojM4VMJ2cg4HDPslQq-2" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=10;strokeWidth=1;fontSize=8;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;HW event&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;udev/udevman&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="110" x="500" y="410" as="geometry" />
+          <mxGeometry height="40" width="140" x="500" y="410" as="geometry" />
         </mxCell>
         <mxCell id="0IojM4VMJ2cg4HDPslQq-4" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="Architecture block" vertex="1">
           <mxGeometry height="170" width="280" x="190" y="410" as="geometry">
@@ -67,36 +67,20 @@
         <mxCell id="AfqIbrdUgiGYDd6iF0Wc-4" parent="AfqIbrdUgiGYDd6iF0Wc-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ERR_SUDO" vertex="1">
           <mxGeometry height="20" width="107.5" x="11.25" y="110" as="geometry" />
         </mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
-  <diagram id="lFoUJFYDxOp71jTRD5sD" name="common">
-    <mxGraphModel dx="1414" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-        <mxCell id="1sLvvHiEgw826AEEip4L-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=40;fillColor=#dae8fc;strokeColor=#6c8ebf;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="check user rigths&lt;div&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;common&lt;/i&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="140" width="130" x="360" y="480" as="geometry">
-            <mxRectangle height="40" width="130" x="20" y="110" as="alternateBounds" />
-          </mxGeometry>
+        <mxCell id="L0AItFfJyhKZ44Kfxzke-1" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#f9f7ed;strokeColor=#36393d;" value="&lt;b&gt;FLAG&lt;/b&gt;&lt;div&gt;shared events&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="130" x="670" y="410" as="geometry" />
         </mxCell>
-        <mxCell id="1sLvvHiEgw826AEEip4L-2" parent="1sLvvHiEgw826AEEip4L-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="check sudo" vertex="1">
-          <mxGeometry height="30" width="107.5" x="10" y="50" as="geometry" />
+        <mxCell id="wxTLbiLUAIQsxjApmDKj-2" parent="1" style="shape=card;whiteSpace=wrap;html=1;size=20;" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px; color: rgb(255, 8, 0);&quot;&gt;Important highlights&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;i&gt;&lt;font style=&quot;font-size: 16px; color: rgb(255, 8, 0);&quot;&gt;(such as fatal state)&lt;/font&gt;&lt;/i&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="210" x="670" y="480" as="geometry" />
         </mxCell>
-        <mxCell id="1sLvvHiEgw826AEEip4L-3" edge="1" parent="1sLvvHiEgw826AEEip4L-1" source="1sLvvHiEgw826AEEip4L-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;startArrow=oval;startFill=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;fillColor=#f8cecc;strokeColor=#b85450;" target="1sLvvHiEgw826AEEip4L-4">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-            <mxPoint x="72.5" y="90" as="sourcePoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="1sLvvHiEgw826AEEip4L-4" parent="1sLvvHiEgw826AEEip4L-1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="ERR_SUDO" vertex="1">
-          <mxGeometry height="20" width="107.5" x="10" y="110" as="geometry" />
+        <mxCell id="gKPHKZHMxO7seNazWO7G-2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=#432D57;fillColor=#76608a;align=center;verticalAlign=middle;rounded=0;fontColor=#ffffff;strokeWidth=5;spacingLeft=3;spacingRight=3;" value="&lt;b&gt;Important note: some systemd services could be interlinked using OR NOT flags.&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;Those choices are not expressed in architecture and will be arbitrated in design.&lt;/b&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="690" x="190" y="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="uTseRdfqLI3VANz-JNwh" name="system-behavior">
-    <mxGraphModel dx="1670" dy="2688" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4606" dy="4445" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
