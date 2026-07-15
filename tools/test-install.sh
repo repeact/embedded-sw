@@ -66,6 +66,22 @@ check_sources() {
         if [[ -f "$TARGET" ]]; then check "Deployed:   $TARGET" "ok"; else check "Deployed:   $TARGET" "fail"; fi
     done
 }
+
+# =============================================================================
+# Check units (systemd services, udev rules) deployment (location)
+# =============================================================================
+check_units() {
+    log "info" "Checking units"
+    for F in "${SERVICES[@]}"; do
+        TARGET="$SYSTEMD_DIR/$F"
+        if [[ -f "$TARGET" ]]; then check "Deployed:   $TARGET" "ok"; else check "Deployed:   $TARGET" "fail"; fi
+    done
+    for F in "${RULES[@]}"; do
+        TARGET="$UDEV_RULES_DIR/$F"
+        if [[ -f "$TARGET" ]]; then check "Deployed:   $TARGET" "ok"; else check "Deployed:   $TARGET" "fail"; fi
+    done
+}
+
 # =============================================================================
 # Check edid deployment (location)
 # =============================================================================
@@ -93,6 +109,7 @@ report_test_results() {
 main() {
     check_executables
     check_sources
+    check_units
     check_edid
     check_boot_config
     report_test_results
