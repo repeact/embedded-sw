@@ -22,7 +22,7 @@ source "$UNINSTALL_SOURCE/lib/common"
 rm -rf "$INSTALL_DIR"
 
 # Remove symlinks
-rm "$SYMLINK_DIR/*"
+rm "$SYMLINK_DIR"/*
 
 # Stop and disable services before removing them
 for F in "${SERVICES[@]}"; do
