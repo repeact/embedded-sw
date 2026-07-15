@@ -42,6 +42,7 @@ Use a scope whenever it adds information the type alone does not carry.
 | `lib`    | `scripts/lib/` | Shared library: `common`, `const`, `errors`                                                                |
 | `config` | `config/`      | Project configuration files                                                                                |
 | `arch`   | `docs/arch/`   | Architecture and design diagrams                                                                           |
+| `deploy` | `deploy/`      | System integration units: udev rules, systemd services, etc. installed on target                           |
 
 ### When to omit the scope
 
