@@ -2,6 +2,9 @@
     "recommendations": [
         "github.vscode-github-actions",
         "mkhl.shfmt",
-        "editorconfig.editorconfig"
+        "editorconfig.editorconfig",
+        "coolbear.systemd-unit-file",
+        "ms-vscode.makefile-tools",
+        "bdq460.shell-formatter"
     ]
 }
