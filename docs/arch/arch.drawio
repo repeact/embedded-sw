@@ -1,16 +1,22 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.6.1 Chrome/142.0.7444.265 Electron/39.8.0 Safari/537.36" version="29.6.1" pages="10">
   <diagram id="sxnvFsYIrM7q8FHlZ7pK" name="install">
-    <mxGraphModel dx="4616" dy="1235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3124" dy="343" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="nWV3b173Gb-NBxGXg0Pk-80" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="deploy lib files" vertex="1">
-          <mxGeometry height="100" width="260" x="-1760" y="240" as="geometry">
+          <mxGeometry height="160" width="260" x="-1760" y="240" as="geometry">
             <mxRectangle height="30" width="260" x="-650" y="90" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="YPzfc5hfammn6kjmZkCO-2" edge="1" parent="nWV3b173Gb-NBxGXg0Pk-80" source="nWV3b173Gb-NBxGXg0Pk-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="YPzfc5hfammn6kjmZkCO-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="nWV3b173Gb-NBxGXg0Pk-70" parent="nWV3b173Gb-NBxGXg0Pk-80" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;move package files &lt;br&gt;&lt;/b&gt;&lt;i&gt;from SRC to DEST&lt;/i&gt;" vertex="1">
           <mxGeometry height="30" width="220" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="YPzfc5hfammn6kjmZkCO-1" parent="nWV3b173Gb-NBxGXg0Pk-80" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;b&gt;move unit files(systemd, udev)&lt;br&gt;&lt;/b&gt;&lt;i&gt;from SRC to DEST&lt;/i&gt;" vertex="1">
+          <mxGeometry height="30" width="220" x="20" y="110" as="geometry" />
         </mxCell>
         <mxCell id="nWV3b173Gb-NBxGXg0Pk-86" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="set permissions" vertex="1">
           <mxGeometry height="140" width="340" x="-1460" y="240" as="geometry">
@@ -131,9 +137,6 @@
         <mxCell id="nWV3b173Gb-NBxGXg0Pk-155" parent="nWV3b173Gb-NBxGXg0Pk-149" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="ERR_DEP_UPDATE" vertex="1">
           <mxGeometry height="20" width="150" x="100" y="102.5" as="geometry" />
         </mxCell>
-        <mxCell id="nWV3b173Gb-NBxGXg0Pk-159" edge="1" parent="1" source="nWV3b173Gb-NBxGXg0Pk-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="nWV3b173Gb-NBxGXg0Pk-87">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
         <mxCell id="nWV3b173Gb-NBxGXg0Pk-160" edge="1" parent="1" source="nWV3b173Gb-NBxGXg0Pk-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" target="nWV3b173Gb-NBxGXg0Pk-98">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -248,6 +251,9 @@
         </mxCell>
         <mxCell id="msUNWXL2h2h-gv4J290i-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;fontStyle=1;align=left;dashed=1;dashPattern=1 2;" value="&lt;div style=&quot;&quot;&gt;IMPROVE: package refresh shall be done for only fresh install.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;Hint: could use a persistent path variable&lt;/i&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="75" width="240" x="-1770" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="YPzfc5hfammn6kjmZkCO-4" edge="1" parent="1" source="YPzfc5hfammn6kjmZkCO-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nWV3b173Gb-NBxGXg0Pk-87">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
