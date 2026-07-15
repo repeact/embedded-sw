@@ -459,7 +459,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="sxnvFsYIrM7q8FHlZ7pK" name="install">
-    <mxGraphModel dx="3964" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4616" dy="1235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -705,14 +705,14 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="msUNWXL2h2h-gv4J290i-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="&lt;div style=&quot;&quot;&gt;IMPROVE: package refresh shall be done for only fresh install.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;Hint: could use a persistent path variable&lt;/i&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="msUNWXL2h2h-gv4J290i-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;fontStyle=1;align=left;dashed=1;dashPattern=1 2;" value="&lt;div style=&quot;&quot;&gt;IMPROVE: package refresh shall be done for only fresh install.&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;Hint: could use a persistent path variable&lt;/i&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="75" width="240" x="-1770" y="500" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="2lgnQ7w9UfsYiLQdNjbz" name="init">
-    <mxGraphModel dx="2916" dy="1235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1834" dy="588" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -797,16 +797,16 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="PkVU010z6lohqpF3qF7X-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="ENSURE: is root needed when running shell script as a &quot;udev rule&quot;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;Hint: solvable with groups and groups permissions&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="PkVU010z6lohqpF3qF7X-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;fontStyle=1;align=left;dashed=1;dashPattern=1 2;" value="ENSURE: is root needed when running shell script as a &quot;udev rule&quot;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;Hint: solvable with groups and groups permissions&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="240" x="-600" y="560" as="geometry" />
         </mxCell>
         <mxCell id="BP12goUUd23-nXOVsSgO-3" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=10;strokeWidth=1;fontSize=12;container=0;" value="&lt;b&gt;HMDI&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;hot-plug&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="140" x="-150" y="540" as="geometry" />
         </mxCell>
-        <mxCell id="BP12goUUd23-nXOVsSgO-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: shall failing to apply pixel format &lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;(and/or)&lt;/i&gt;&lt;/span&gt;:&lt;div&gt;&lt;ul&gt;&lt;li&gt;throw an error&lt;/li&gt;&lt;li&gt;throw a log warning&lt;/li&gt;&lt;li&gt;notify user&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="BP12goUUd23-nXOVsSgO-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;fontStyle=1;align=left;dashed=1;dashPattern=1 2;" value="DEFINE: shall failing to apply pixel format &lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;(and/or)&lt;/i&gt;&lt;/span&gt;:&lt;div&gt;&lt;ul&gt;&lt;li&gt;throw an error&lt;/li&gt;&lt;li&gt;throw a log warning&lt;/li&gt;&lt;li&gt;notify user&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="270" x="340" y="440" as="geometry" />
         </mxCell>
-        <mxCell id="BP12goUUd23-nXOVsSgO-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: shall device settings be exposed to other scripts ?&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;Hint: could be user by sanity check&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="BP12goUUd23-nXOVsSgO-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;fontStyle=1;align=left;dashed=1;dashPattern=1 2;" value="DEFINE: shall device settings be exposed to other scripts ?&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;Hint: could be user by sanity check&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="270" x="340" y="340" as="geometry" />
         </mxCell>
         <mxCell id="BP12goUUd23-nXOVsSgO-14" edge="1" parent="1" source="AX8OOTKbUl64C1LQFemo-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="_vfmbWTX9tSiWVOfw3s1-16">
@@ -828,7 +828,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="qO74gSqQryegVfeUCxf4" name="start-rec">
-    <mxGraphModel dx="2900" dy="1219" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2916" dy="1235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -905,7 +905,7 @@
             <mxPoint x="105" y="130" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="RrFcG-2yK7YveJCaLhrJ-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: shall a missing configured device:&lt;div&gt;&lt;ul&gt;&lt;li&gt;throw an error&lt;/li&gt;&lt;li&gt;throw a log warning&lt;/li&gt;&lt;li&gt;notify user&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="RrFcG-2yK7YveJCaLhrJ-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;fontStyle=1;align=left;dashed=1;dashPattern=1 1;" value="DEFINE: shall a missing configured device:&lt;div&gt;&lt;ul&gt;&lt;li&gt;throw an error&lt;/li&gt;&lt;li&gt;throw a log warning&lt;/li&gt;&lt;li&gt;notify user&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="350" x="-700" y="390" as="geometry" />
         </mxCell>
         <mxCell id="CyHWRqW_Z-BMnV7_PA8a-1" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=10;strokeWidth=1;fontSize=12;container=0;" value="&lt;b&gt;GPIO event&lt;/b&gt;" vertex="1">
@@ -917,10 +917,10 @@
         <mxCell id="GKsna3c67DnPJLBc5wOm-3" edge="1" parent="1" source="VMqMcFXH-Wu3PKrNCcAt-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="VMqMcFXH-Wu3PKrNCcAt-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="nqR9k008nrq5BkzC-FrP-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: shall device settings be exposed to user ?&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;Hint: using screen&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="nqR9k008nrq5BkzC-FrP-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;fontStyle=1;align=left;dashed=1;dashPattern=1 1;" value="DEFINE: shall device settings be exposed to user ?&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;Hint: using screen&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="280" x="100" y="310" as="geometry" />
         </mxCell>
-        <mxCell id="v73fKPlwsJNRMwmJxCuc-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: in this state shall device:&lt;div&gt;&lt;ul&gt;&lt;li&gt;ask user to force record (&lt;i style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: 400;&quot;&gt;screen)&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;automatically clean and record&lt;/span&gt;&lt;/li&gt;&lt;li&gt;reboot&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="v73fKPlwsJNRMwmJxCuc-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;fontStyle=1;align=left;dashed=1;dashPattern=1 1;" value="DEFINE: in this state shall device:&lt;div&gt;&lt;ul&gt;&lt;li&gt;ask user to force record (&lt;i style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); font-weight: 400;&quot;&gt;screen)&lt;/i&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;automatically clean and record&lt;/span&gt;&lt;/li&gt;&lt;li&gt;reboot&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="100" width="320" x="-280" y="390" as="geometry" />
         </mxCell>
         <mxCell id="v73fKPlwsJNRMwmJxCuc-4" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="expose process ID" vertex="1">
@@ -941,10 +941,10 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="v73fKPlwsJNRMwmJxCuc-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: how to expose properly PID" vertex="1">
+        <mxCell id="v73fKPlwsJNRMwmJxCuc-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;fontStyle=1;align=left;dashed=1;dashPattern=1 1;" value="DEFINE: how to expose properly PID" vertex="1">
           <mxGeometry height="80" width="260" x="420" y="410" as="geometry" />
         </mxCell>
-        <mxCell id="zRfrgf8HSi7knQb4sLn_-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: shall PID export be double checked and throw a failing error" vertex="1">
+        <mxCell id="zRfrgf8HSi7knQb4sLn_-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;fontStyle=1;align=left;dashed=1;dashPattern=1 1;" value="DEFINE: shall PID export be double checked and throw a failing error" vertex="1">
           <mxGeometry height="80" width="280" x="100" y="410" as="geometry" />
         </mxCell>
         <mxCell id="dQLIDGjSmPccfHOYdbHt-1" parent="1" style="swimlane;whiteSpace=wrap;html=1;startSize=30;fillColor=#e1d5e7;strokeColor=#9673a6;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="start sanity check service" vertex="1">
@@ -968,7 +968,7 @@
     </mxGraphModel>
   </diagram>
   <diagram name="stop-record" id="6edFWhD8LnRnJt5O_0u4">
-    <mxGraphModel dx="2094" dy="234" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="3766" dy="1235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="JvjgLW2-jj0tV9Zj5Y3L-0" />
         <mxCell id="JvjgLW2-jj0tV9Zj5Y3L-1" parent="JvjgLW2-jj0tV9Zj5Y3L-0" />
@@ -1061,22 +1061,22 @@
         <mxCell id="eEa5NCSKdG8-M-FhFRn3-1" parent="JvjgLW2-jj0tV9Zj5Y3L-1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#bac8d3;strokeColor=#23445d;" value="" vertex="1">
           <mxGeometry height="30" width="30" x="-1680" y="630" as="geometry" />
         </mxCell>
-        <mxCell id="eEa5NCSKdG8-M-FhFRn3-2" parent="JvjgLW2-jj0tV9Zj5Y3L-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="ENSURE: is root needed when running shell script as a &quot;udev rule&quot;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;Hint: solvable with groups and groups permissions&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="eEa5NCSKdG8-M-FhFRn3-2" parent="JvjgLW2-jj0tV9Zj5Y3L-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=none;fontStyle=1;align=left;dashed=1;dashPattern=1 1;" value="ENSURE: is root needed when running shell script as a &quot;udev rule&quot;&lt;div style=&quot;&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;&lt;i&gt;Hint: solvable with groups and groups permissions&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="240" x="-1680" y="530" as="geometry" />
         </mxCell>
         <mxCell id="eEa5NCSKdG8-M-FhFRn3-3" parent="JvjgLW2-jj0tV9Zj5Y3L-1" style="rounded=1;whiteSpace=wrap;html=1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;check sudo&lt;/b&gt;" vertex="1">
           <mxGeometry height="30" width="130" x="-1570" y="630" as="geometry" />
         </mxCell>
-        <mxCell id="p2NzZPVARR7N2cj-i5R7-0" parent="JvjgLW2-jj0tV9Zj5Y3L-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: is &quot;&lt;span style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-style: italic; font-weight: 400;&quot;&gt;ERR_PID_CORRUPTED&quot;&lt;/span&gt; required ?&lt;/span&gt;" vertex="1">
+        <mxCell id="p2NzZPVARR7N2cj-i5R7-0" parent="JvjgLW2-jj0tV9Zj5Y3L-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=none;fontStyle=1;align=left;dashed=1;dashPattern=1 1;" value="DEFINE: is &quot;&lt;span style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;font-style: italic; font-weight: 400;&quot;&gt;ERR_PID_CORRUPTED&quot;&lt;/span&gt; required ?&lt;/span&gt;" vertex="1">
           <mxGeometry height="40" width="319" x="-1388" y="330" as="geometry" />
         </mxCell>
-        <mxCell id="EyFLXidphaUJ-ch8Bfw--0" parent="JvjgLW2-jj0tV9Zj5Y3L-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="ENSURE: could PID be corrupted iif handled/stored properly ?&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Hint: corruption means multiple processes, phantom processes. Though it shall be catched by &quot;&lt;i&gt;start&quot;&amp;nbsp;&lt;/i&gt;or &quot;&lt;i&gt;sanity checks&quot;&lt;/i&gt;&lt;/span&gt;" vertex="1">
+        <mxCell id="EyFLXidphaUJ-ch8Bfw--0" parent="JvjgLW2-jj0tV9Zj5Y3L-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=none;fontStyle=1;align=left;dashed=1;dashPattern=1 1;" value="ENSURE: could PID be corrupted iif handled/stored properly ?&amp;nbsp;&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Hint: corruption means multiple processes, phantom processes. Though it shall be catched by &quot;&lt;i&gt;start&quot;&amp;nbsp;&lt;/i&gt;or &quot;&lt;i&gt;sanity checks&quot;&lt;/i&gt;&lt;/span&gt;" vertex="1">
           <mxGeometry height="100" width="319" x="-1388" y="390" as="geometry" />
         </mxCell>
-        <mxCell id="EyFLXidphaUJ-ch8Bfw--2" parent="JvjgLW2-jj0tV9Zj5Y3L-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: how to handle this error cases ?&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Hints: Are they required at all ?&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Since it shall be catched by &quot;&lt;i&gt;start&quot;&amp;nbsp;&lt;/i&gt;or &quot;&lt;i&gt;sanity checks&quot;&lt;/i&gt;&lt;/span&gt;" vertex="1">
+        <mxCell id="EyFLXidphaUJ-ch8Bfw--2" parent="JvjgLW2-jj0tV9Zj5Y3L-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=none;fontStyle=1;align=left;dashed=1;dashPattern=1 1;" value="DEFINE: how to handle this error cases ?&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Hints: Are they required at all ?&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Since it shall be catched by &quot;&lt;i&gt;start&quot;&amp;nbsp;&lt;/i&gt;or &quot;&lt;i&gt;sanity checks&quot;&lt;/i&gt;&lt;/span&gt;" vertex="1">
           <mxGeometry height="100" width="389" x="-1010" y="410" as="geometry" />
         </mxCell>
-        <mxCell id="EyFLXidphaUJ-ch8Bfw--3" parent="JvjgLW2-jj0tV9Zj5Y3L-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="BEHAVIOR: is it required ?" vertex="1">
+        <mxCell id="EyFLXidphaUJ-ch8Bfw--3" parent="JvjgLW2-jj0tV9Zj5Y3L-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=none;fontStyle=1;align=left;dashed=1;dashPattern=1 1;" value="BEHAVIOR: is it required ?" vertex="1">
           <mxGeometry height="30" width="240" x="-560" y="480" as="geometry" />
         </mxCell>
         <mxCell id="kEhAxUQ-QWxzN9BuCjFb-0" parent="JvjgLW2-jj0tV9Zj5Y3L-1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=10;strokeWidth=1;fontSize=12;container=0;" value="&lt;b&gt;GPIO event&lt;/b&gt;" vertex="1">
@@ -1103,7 +1103,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="3h1ZnZeHtj6VbYAlyjnt" name="sanity-check">
-    <mxGraphModel dx="820" dy="488" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2066" dy="1235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1118,17 +1118,17 @@
         <mxCell id="3eFmv6ZLeNvnvHn1MKKL-1" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.08333333333333333;strokeWidth=1;fontSize=12;" value="&lt;div&gt;&lt;b&gt;During REC&lt;/b&gt;&lt;/div&gt;Periodic" vertex="1">
           <mxGeometry height="30" width="120" x="220" y="580" as="geometry" />
         </mxCell>
-        <mxCell id="WNO_6MtTvz6e-HR1jjuG-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: Behavior&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Hints: consistency of:&lt;/i&gt;&lt;/span&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;PID&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Device settings&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;...&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="WNO_6MtTvz6e-HR1jjuG-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;fontStyle=1;align=left;dashed=1;dashPattern=1 1;" value="DEFINE: Behavior&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Hints: consistency of:&lt;/i&gt;&lt;/span&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;PID&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Device settings&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;...&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="110" width="300" x="250" y="450" as="geometry" />
         </mxCell>
-        <mxCell id="3AnRFiP2b285n5rFrXlu-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: Error handling" vertex="1">
+        <mxCell id="3AnRFiP2b285n5rFrXlu-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;fontStyle=1;align=left;dashed=1;dashPattern=1 1;" value="DEFINE: Error handling" vertex="1">
           <mxGeometry height="30" width="300" x="250" y="400" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
   <diagram id="1zK8xQbqAM4mn9q-Vssl" name="system-cleanup">
-    <mxGraphModel dx="1171" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2066" dy="1235" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1143,16 +1143,16 @@
         <mxCell id="PtijjatIY93ae3-QzJ41-3" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.08333333333333333;strokeWidth=1;fontSize=12;" value="&lt;div&gt;&lt;b&gt;Boot/Shutdown&lt;/b&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="120" x="180" y="730" as="geometry" />
         </mxCell>
-        <mxCell id="PtijjatIY93ae3-QzJ41-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: Behavior&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Hints: consistency of:&lt;/i&gt;&lt;/span&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Clean all shared files (device settings, PID)&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Ensure and kill all phantom processes&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;...&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="PtijjatIY93ae3-QzJ41-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;fontStyle=1;align=left;dashed=1;dashPattern=1 1;" value="DEFINE: Behavior&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Hints: consistency of:&lt;/i&gt;&lt;/span&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Clean all shared files (device settings, PID)&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Ensure and kill all phantom processes&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;...&lt;/i&gt;&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="110" width="300" x="250" y="600" as="geometry" />
         </mxCell>
-        <mxCell id="PtijjatIY93ae3-QzJ41-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: Error handling" vertex="1">
+        <mxCell id="PtijjatIY93ae3-QzJ41-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;fontStyle=1;align=left;dashed=1;dashPattern=1 1;" value="DEFINE: Error handling" vertex="1">
           <mxGeometry height="30" width="300" x="250" y="550" as="geometry" />
         </mxCell>
         <mxCell id="H8AfZNfOxRAzQl6sEP9i-1" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=10;strokeWidth=1;fontSize=12;container=0;" value="&lt;b&gt;HMDI&amp;nbsp;&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;hot-unplug&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="30" width="110" x="500" y="730" as="geometry" />
         </mxCell>
-        <mxCell id="H8AfZNfOxRAzQl6sEP9i-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;align=left;" value="DEFINE: Shall be called by init/stop ?&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;Hints: could be called at init and/or stop.&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;Script caller shall be documented and defined !&amp;nbsp;&lt;/i&gt;&lt;/div&gt;" vertex="1">
+        <mxCell id="H8AfZNfOxRAzQl6sEP9i-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#eeeeee;strokeColor=#36393d;fontStyle=1;align=left;dashed=1;dashPattern=1 1;" value="DEFINE: Shall be called by init/stop ?&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;Hints: could be called at init and/or stop.&lt;/i&gt;&lt;/div&gt;&lt;div&gt;&lt;i style=&quot;font-weight: normal;&quot;&gt;Script caller shall be documented and defined !&amp;nbsp;&lt;/i&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="70" width="300" x="250" y="460" as="geometry" />
         </mxCell>
       </root>
