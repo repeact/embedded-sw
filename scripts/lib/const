@@ -28,9 +28,11 @@ declare -gra SOURCES=(
 )
 
 declare -gra SERVICES=(
+    "repeact-video0-setup.service"
 )
 
 declare -gra RULES=(
+    "99-repeact-video0.rules"
 )
 
 # Required hardware config
