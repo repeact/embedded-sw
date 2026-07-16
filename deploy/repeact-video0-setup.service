@@ -1,0 +1,10 @@
+[Unit]
+Description=Repeact boot service: load edid once bridge available
+After=dev-video0.device
+BindsTo=dev-video0.device
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/etc/repeact/load-edid.sh
+Restart=on-failure
