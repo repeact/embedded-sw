@@ -12,6 +12,7 @@ readonly ERR_OK=0
 readonly ERR_SUDO=1
 readonly ERR_EXECUTE_PERMISSION_DENIED=2
 readonly ERR_INVALID_ARG=3
+readonly ERR_FILE_NOT_FOUND=4
 
 # Tools [10-19]
 readonly ERR_SYMLINK_DUPLICATE=10
@@ -22,3 +23,4 @@ readonly ERR_DEP_UPDATE=14
 readonly ERR_BOOT_CONF_NOT_FOUND=15
 
 # Atomic errors [100+]
+readonly ERR_VIDEO_DEVICE_NOT_FOUND=100

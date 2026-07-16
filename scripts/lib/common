@@ -46,3 +46,9 @@ sudo_check() {
         exit "$ERR_SUDO"
     fi
 }
+
+# Wrapper around v4l2-ctl.
+# Stderr is always suppressed; the calling stage checks exit codes and emits its own error messages.
+v4l2() {
+    v4l2-ctl "$@" 2> /dev/null
+}
