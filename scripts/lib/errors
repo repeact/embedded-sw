@@ -8,7 +8,7 @@ readonly ERR_SUDO=1
 readonly ERR_EXECUTE_PERMISSION_DENIED=2
 readonly ERR_INVALID_ARG=3
 
-# Tools [10-20]
+# Tools [10-19]
 readonly ERR_SYMLINK_DUPLICATE=10
 readonly ERR_SYMLINK_CREATE=11
 readonly ERR_SYS_UPDATE=12
