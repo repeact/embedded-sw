@@ -18,6 +18,7 @@ declare -gr PKG_FFMPEG="ffmpeg=8:7.1*"
 # Scripts deployed to $INSTALL_DIR
 # (chmod +x + symlinked to $SYMLINK_DIR)
 declare -gra EXECUTABLES=(
+    "load-edid.sh"
 )
 
 # Required dependencies files
