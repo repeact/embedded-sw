@@ -18,10 +18,6 @@ declare -gr PKG_FFMPEG="ffmpeg=8:7.1*"
 # Scripts deployed to $INSTALL_DIR
 # (chmod +x + symlinked to $SYMLINK_DIR)
 declare -gra EXECUTABLES=(
-    "rec.sh"
-    "setup.sh"
-    "start.sh"
-    "stop.sh"
 )
 
 # Required dependencies files
