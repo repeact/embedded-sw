@@ -363,319 +363,162 @@
     </mxGraphModel>
   </diagram>
   <diagram id="uTseRdfqLI3VANz-JNwh" name="system-behavior">
-    <mxGraphModel dx="984" dy="588" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="4315" dy="3088" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="nLANp58avmLg9mOFybGD-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeColor=default;strokeWidth=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=default;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="s" vertex="1">
-          <mxGeometry height="800" width="640" x="2160" y="220" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-28" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" target="nLANp58avmLg9mOFybGD-49">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-29" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.07142857142857142;strokeWidth=1;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;sanity-checker&lt;/b&gt;&lt;/span&gt;" vertex="1">
-          <mxGeometry height="60" width="140" x="2250" y="837.5" as="geometry" />
-        </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-30" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.05;strokeWidth=1;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;hdmi-state-daemon&lt;/b&gt;" vertex="1">
-          <mxGeometry height="180" width="180" x="920" y="680" as="geometry" />
+          <mxGeometry height="120" width="180" x="1370" y="660" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-31" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.05555555555555555;strokeWidth=1;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;setup-bridge&lt;/b&gt;&lt;/span&gt;" vertex="1">
-          <mxGeometry height="120" width="180" x="920" y="400" as="geometry" />
+          <mxGeometry height="60" width="180" x="1370" y="440" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-32" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=10;strokeWidth=1;fontSize=8;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;video0 state&lt;/b&gt;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;changed&lt;br&gt;&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="140" x="880" y="370" as="geometry" />
+          <mxGeometry height="40" width="140" x="1330" y="410" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-33" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" value="&lt;b&gt;Load edid&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="170" x="1240" y="410" as="geometry" />
+          <mxGeometry height="40" width="170" x="1690" y="450" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-34" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" value="&lt;b&gt;Wait for new state event&lt;/b&gt;&lt;div&gt;&lt;i&gt;(WFI)&lt;/i&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="160" x="1240" y="750" as="geometry" />
+          <mxGeometry height="40" width="160" x="1690" y="670" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-35" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.05555555555555555;strokeWidth=1;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;lock-signal&lt;/b&gt;&lt;/span&gt;" vertex="1">
-          <mxGeometry height="120" width="180" x="910" y="1020" as="geometry" />
+          <mxGeometry height="120" width="180" x="1360" y="940" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-36" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" target="nLANp58avmLg9mOFybGD-38">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" value="&lt;b&gt;Query and lock video signal&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="120" x="1230" y="1030" as="geometry" />
+          <mxGeometry height="40" width="120" x="1680" y="950" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" value="&lt;b&gt;Store current video config&lt;/b&gt;&lt;div&gt;&lt;i&gt;(pixfmt, res, timings)&lt;/i&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="170" x="1430" y="1030" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=left;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;TBD:&lt;span style=&quot;font-weight: normal;&quot;&gt; design shall define all requred actions by stop script&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="350" x="2180" y="970" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=left;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;IMPOVEMENTS:&lt;span style=&quot;font-weight: normal;&quot;&gt; clean process seems to expand stop-rec process&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="390" x="2180" y="917.5" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-41" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#f9f7ed;strokeColor=#36393d;" value="&lt;b&gt;IS_SIG_LOCKED&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="130" x="2228.75" y="690" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-42" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#f9f7ed;strokeColor=#36393d;" value="&lt;b&gt;EDID_LOADED&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="130" x="2228.75" y="730" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-43" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#f9f7ed;strokeColor=#36393d;" value="&lt;b&gt;HW_AVAIL&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="130" x="2228.75" y="650" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-44" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#f9f7ed;strokeColor=#36393d;" value="&lt;b&gt;HDMI_PLUGGED&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="130" x="2228.75" y="770" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-45" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#f9f7ed;strokeColor=#36393d;" value="&lt;b&gt;REC_IN_PROGRESS&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="150" x="2228.75" y="810" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-46" parent="1" style="shape=card;whiteSpace=wrap;html=1;size=20;rotation=-90;" value="&lt;span style=&quot;color: rgb(255, 0, 0); font-size: 20px; font-weight: 700;&quot;&gt;||&lt;/span&gt;" vertex="1">
-          <mxGeometry height="40" width="200" x="2100" y="730" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-47" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#f9f7ed;strokeColor=#36393d;" value="&lt;b&gt;CLEAN_PIPELINE&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="150" x="2630" y="847.5" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-48" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;" target="nLANp58avmLg9mOFybGD-47">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-49" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" value="&lt;b&gt;Log errors, monitor process/daemon, handle impossible states&lt;/b&gt;" vertex="1">
-          <mxGeometry height="60" width="155" x="2435" y="837.5" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-50" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=left;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;TBD:&lt;span style=&quot;font-weight: normal;&quot;&gt; design shall define all requred actions by sanity checker script&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="350" x="2180" y="547.5" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-51" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=left;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;TBD:&lt;span style=&quot;font-weight: normal;&quot;&gt; weak architecture, shall be improver&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="350" x="2180" y="500" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=left;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;TBD:&lt;span style=&quot;font-weight: normal;&quot;&gt; use/test flag truthtable (impossible states)&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="350" x="2180" y="452.5" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-53" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=left;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;movable=1;resizable=1;rotatable=1;deletable=1;editable=1;locked=0;connectable=1;" value="&lt;div style=&quot;&quot;&gt;TBD:&lt;span style=&quot;font-weight: normal;&quot;&gt; shall ensure on rec start/stop:&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;PID are existings&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;PID are deleted and process has been killed with it&lt;br&gt;(shall start/stop keep a copy of last PID ?&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;System ressources and temp are correct (else log)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Periodic logs&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="142.5" width="350" x="2180" y="290" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-54" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=center;fontColor=#FF0000;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;TBD&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="50" width="170" x="2580" y="290" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-55" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=left;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;TBD: &lt;span style=&quot;font-weight: 400;&quot;&gt;shall it monitor clean-pipeline tiemout (hence throw a critical error if too long)&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="450" x="2180" y="600" as="geometry" />
+          <mxGeometry height="40" width="170" x="1910" y="950" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-56" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.07142857142857142;strokeWidth=1;fontSize=8;fillColor=#1ba1e2;fontColor=#FFFFFF;strokeColor=#006EAF;" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;setup-bridge&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="140" x="880" y="650" as="geometry" />
+          <mxGeometry height="40" width="140" x="1330" y="630" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-57" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.07142857142857142;strokeWidth=1;fontSize=8;fillColor=#1ba1e2;fontColor=#FFFFFF;strokeColor=#006EAF;" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;setup-bridge&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="140" x="870" y="990" as="geometry" />
+          <mxGeometry height="40" width="140" x="1320" y="910" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-58" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;" value="&lt;b&gt;HDMI_PLUGGED&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="130" x="1665" y="810" as="geometry" />
+          <mxGeometry height="40" width="130" x="1910" y="730" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-59" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;" value="&lt;b&gt;&lt;strike&gt;HDMI_PLUGGED&lt;/strike&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="130" x="1665" y="870" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-60" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-70">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-61" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;spacingTop=0;spacingLeft=8;spacingRight=8;" value="ExecStartPre" vertex="1">
-          <mxGeometry height="40" width="120" x="1090" y="690" as="geometry" />
+          <mxGeometry height="40" width="130" x="1910" y="790" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-62" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;spacingTop=0;spacingLeft=8;spacingRight=8;" value="ExecStart" vertex="1">
-          <mxGeometry height="40" width="120" x="1090" y="750" as="geometry" />
+          <mxGeometry height="40" width="120" x="1540" y="670" as="geometry" />
         </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-63" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-72">
+        <mxCell id="nLANp58avmLg9mOFybGD-63" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-121">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1230" y="835" as="targetPoint" />
+            <mxPoint x="1690" y="750.0000000000002" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-64" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;spacingTop=0;spacingLeft=8;spacingRight=8;" value="ExecStopPost" vertex="1">
-          <mxGeometry height="40" width="120" x="1090" y="810" as="geometry" />
+          <mxGeometry height="40" width="120" x="1540" y="730" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-65" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-33">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-66" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;spacingTop=0;spacingLeft=8;spacingRight=8;" value="ExecStart" vertex="1">
-          <mxGeometry height="40" width="120" x="1090" y="410" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-67" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-69">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-68" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;spacingTop=0;spacingLeft=8;spacingRight=8;strokeColor=#FF0000;" value="ExecStopPost" vertex="1">
-          <mxGeometry height="40" width="120" x="1090" y="470" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-69" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;" value="&lt;b&gt;RESET_FULL_SYSTEM&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="170" x="1240" y="470" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-70" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#FF0000;" value="&lt;b&gt;Compare current HDMI state and previous&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="150" x="1240" y="690" as="geometry" />
+          <mxGeometry height="40" width="120" x="1540" y="450" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-71" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-34" value="">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1205" y="770" as="sourcePoint" />
-            <mxPoint x="1240" y="770" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-72" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" value="&lt;b&gt;Store current HDMI state&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="100" x="1240" y="810" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-73" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=center;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Hanle first boot&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="150" x="1240" y="600" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-74" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4.62809917355372;endSize=3.978512396694215;endWidth=9.262109551833408;fillColor=#f5f5f5;strokeColor=#666666;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="1460" y="490" as="sourcePoint" />
-            <mxPoint x="1420" y="490" as="targetPoint" />
+            <mxPoint x="1655" y="690" as="sourcePoint" />
+            <mxPoint x="1690" y="690" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-75" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-37">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-76" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;spacingTop=0;spacingLeft=8;spacingRight=8;" value="ExecStart" vertex="1">
-          <mxGeometry height="40" width="120" x="1080" y="1030" as="geometry" />
+          <mxGeometry height="40" width="120" x="1530" y="950" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-77" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-78" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-35">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-78" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;" value="&lt;b&gt;HDMI_PLUGGED&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="130" x="720" y="1060" as="geometry" />
+          <mxGeometry height="40" width="130" x="1170" y="980" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-79" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-80" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-81">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-80" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;spacingTop=0;spacingLeft=8;spacingRight=8;" value="ExecStopPost" vertex="1">
-          <mxGeometry height="40" width="120" x="1080" y="1090" as="geometry" />
+          <mxGeometry height="40" width="120" x="1530" y="1010" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-81" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" value="&lt;b&gt;Clear current video config&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="120" x="1230" y="1090" as="geometry" />
+          <mxGeometry height="40" width="120" x="1680" y="1010" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-82" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.05555555555555555;strokeWidth=1;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;record&lt;/b&gt;&lt;/span&gt;" vertex="1">
-          <mxGeometry height="240" width="180" x="910" y="1690" as="geometry" />
+          <mxGeometry height="180" width="180" x="1360" y="1490" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-83" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.07142857142857142;strokeWidth=1;fontSize=8;fillColor=#1ba1e2;fontColor=#FFFFFF;strokeColor=#006EAF;" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;lock-signal&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="140" x="870" y="1660" as="geometry" />
+          <mxGeometry height="40" width="140" x="1320" y="1460" as="geometry" />
         </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-84" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-85" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-90">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-85" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;spacingTop=0;spacingLeft=8;spacingRight=8;" value="ExecStartPre" vertex="1">
-          <mxGeometry height="40" width="120" x="1080" y="1700" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-86" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-107">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="nLANp58avmLg9mOFybGD-86" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-92">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1680" y="1520" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-87" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;spacingTop=0;spacingLeft=8;spacingRight=8;" value="ExecStart" vertex="1">
-          <mxGeometry height="38.75" width="120" x="1080" y="1760" as="geometry" />
+          <mxGeometry height="38.75" width="120" x="1530" y="1500" as="geometry" />
         </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-88" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-95">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="nLANp58avmLg9mOFybGD-88" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-102">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1680" y="1640" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-89" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;spacingTop=0;spacingLeft=8;spacingRight=8;" value="ExecStopPost" vertex="1">
-          <mxGeometry height="40" width="120" x="1080" y="1880" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-90" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#FF0000;" value="&lt;b&gt;Ensure no record in progress&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="120" x="1230" y="1700" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-91" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-93">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry height="40" width="120" x="1530" y="1620" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-92" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#FF0000;" value="&lt;b&gt;Launch v4l2 ffmpeg pipeline&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="110" x="1430" y="1760" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-93" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" value="&lt;b&gt;Write process PID&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="130" x="1630" y="1760" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-94" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-109">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-95" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#FF0000;" value="&lt;b&gt;Ensure process are killed&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="120" x="1230" y="1880" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-96" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=left;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(51, 51, 51), rgb(193, 193, 193));&quot;&gt;Is it relevant to double check since systemd shall ensure process killed ?&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="440" x="910" y="1610" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-97" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4.62809917355372;endSize=3.978512396694215;endWidth=9.262109551833408;fillColor=#f5f5f5;strokeColor=#666666;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="1310" y="1650" as="sourcePoint" />
-            <mxPoint x="1310" y="1690" as="targetPoint" />
-          </mxGeometry>
+          <mxGeometry height="40" width="120" x="1680" y="1500" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-98" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-100">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-99" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;spacingTop=0;spacingLeft=8;spacingRight=8;" value="ExecStop" vertex="1">
-          <mxGeometry height="40" width="120" x="1080" y="1820" as="geometry" />
+          <mxGeometry height="40" width="120" x="1530" y="1560" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-100" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#FF0000;" value="&lt;b&gt;Kill v4l2 ffmpeg pipeline&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="110" x="1230" y="1820" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-101" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-110">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry height="40" width="120" x="1680" y="1560" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-102" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" value="&lt;div&gt;&lt;b&gt;Move recorded file to userspace&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="130" x="1630" y="1880" as="geometry" />
+          <mxGeometry height="40" width="130" x="1680" y="1620" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-103" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=0;align=left;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;S&lt;/span&gt;&lt;span style=&quot;&quot;&gt;ubprocess termination shall be handled very carefully !!&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;&lt;i&gt;Can using &quot;exec&quot; command solve this ?&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="320" x="1430" y="1640" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-104" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=left;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;IMPROVEMENT: &lt;span style=&quot;font-weight: 400;&quot;&gt;Handle metadata. Recording in a temp file would enable on the fly renaming.&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;&lt;i&gt;Once rec has stopped, ExecStopPost could concat file w/ metadata and move it to userspace record folder&lt;/i&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="570" x="1430" y="1580" as="geometry" />
+          <mxGeometry height="40" width="320" x="1680" y="1400" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-105" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4.62809917355372;endSize=3.978512396694215;endWidth=9.262109551833408;fillColor=#f5f5f5;strokeColor=#666666;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="1484.76" y="1690" as="sourcePoint" />
-            <mxPoint x="1484.76" y="1750" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-106" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-92">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-107" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" value="&lt;b&gt;Create default, temporary, metadata&amp;nbsp;&lt;/b&gt;&lt;i style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(override)&lt;/i&gt;" vertex="1">
-          <mxGeometry height="40" width="160" x="1230" y="1760" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-108" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-102">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-109" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" value="&lt;b&gt;Concat metadata and recorded file&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="140" x="1430" y="1880" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-110" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" value="&lt;div&gt;&lt;b&gt;Erase metadata&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="110" x="1880" y="1880" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-111" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4.62809917355372;endSize=3.978512396694215;endWidth=9.262109551833408;fillColor=#f5f5f5;strokeColor=#666666;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <Array as="points">
-              <mxPoint x="1830" y="1820" />
-              <mxPoint x="1810" y="1840" />
-              <mxPoint x="1590" y="1840" />
-            </Array>
-            <mxPoint x="1830" y="1640" as="sourcePoint" />
-            <mxPoint x="1560" y="1870" as="targetPoint" />
+            <mxPoint x="1739.89" y="1450" as="sourcePoint" />
+            <mxPoint x="1739.89" y="1490" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-112" edge="1" parent="1" style="endArrow=halfCircle;html=1;rounded=0;strokeWidth=2;dashed=1;dashPattern=8 8;strokeColor=#330000;startArrow=halfCircle;startFill=0;endFill=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="550" y="560" as="sourcePoint" />
-            <mxPoint x="2040" y="560" as="targetPoint" />
+            <mxPoint x="1000" y="530" as="sourcePoint" />
+            <mxPoint x="2490" y="530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-113" edge="1" parent="1" style="endArrow=halfCircle;html=1;rounded=0;strokeWidth=2;dashed=1;dashPattern=8 8;strokeColor=#330000;startArrow=halfCircle;startFill=0;endFill=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="550" y="950" as="sourcePoint" />
-            <mxPoint x="2040" y="950" as="targetPoint" />
+            <mxPoint x="1000" y="870" as="sourcePoint" />
+            <mxPoint x="2490" y="870" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-114" edge="1" parent="1" style="endArrow=halfCircle;html=1;rounded=0;strokeWidth=2;dashed=1;dashPattern=8 8;strokeColor=#330000;startArrow=halfCircle;startFill=0;endFill=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="550" y="1180" as="sourcePoint" />
-            <mxPoint x="2040" y="1180" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-115" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=center;fontColor=#FF0000;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 30px;&quot;&gt;TBD: &lt;span style=&quot;font-weight: normal;&quot;&gt;ALL SERVICES SHALL TRIGGER SANITY CHECK ON FAILURE (LOG ERRORS)&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="50" width="1490" x="550" y="220" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-116" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-72" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-121" value="">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1340" y="830" as="sourcePoint" />
-            <mxPoint x="1620" y="830" as="targetPoint" />
+            <mxPoint x="1000" y="1100" as="sourcePoint" />
+            <mxPoint x="2490" y="1100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-117" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-30">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1515" y="890" />
-              <mxPoint x="1010" y="890" />
+              <mxPoint x="1775" y="810" />
+              <mxPoint x="1460" y="810" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -690,28 +533,28 @@
         <mxCell id="nLANp58avmLg9mOFybGD-120" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-59">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1630" y="830" />
-              <mxPoint x="1630" y="890" />
+              <mxPoint x="1880" y="750" />
+              <mxPoint x="1880" y="810" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-121" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" value="&lt;b&gt;Start/stop&lt;/b&gt;&lt;div&gt;&lt;i style=&quot;&quot;&gt;lock-signal&lt;/i&gt;&lt;b&gt; service&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="170" x="1430" y="810" as="geometry" />
+          <mxGeometry height="40" width="160" x="1690" y="730" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-122" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=center;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;horizontal=0;" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;TBD: &lt;span style=&quot;font-weight: normal;&quot;&gt;service timeout, killsignal, timeout, killmode, type...&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="1670" width="50" x="460" y="310" as="geometry" />
+          <mxGeometry height="1370" width="50" x="910" y="350" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-123" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.05555555555555555;strokeWidth=1;fontSize=8;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;rec-trigger&lt;/b&gt;&lt;/span&gt;" vertex="1">
-          <mxGeometry height="120" width="180" x="910" y="1290" as="geometry" />
+          <mxGeometry height="60" width="180" x="1360" y="1210" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-124" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;size=0.07142857142857142;strokeWidth=1;fontSize=8;fillColor=#1ba1e2;fontColor=#FFFFFF;strokeColor=#006EAF;" value="&lt;b style=&quot;font-size: 12px;&quot;&gt;lock-signal&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="140" x="870" y="1260" as="geometry" />
+          <mxGeometry height="40" width="140" x="1320" y="1180" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-125" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;size=10;strokeWidth=1;fontSize=8;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;b&gt;exti record start/stop trigger&lt;/b&gt;&lt;/span&gt;" vertex="1">
-          <mxGeometry height="40" width="140" x="870" y="1220" as="geometry" />
+          <mxGeometry height="40" width="140" x="1320" y="1140" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-126" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;" value="&lt;b&gt;RECORD&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="130" x="720" y="1730" as="geometry" />
+          <mxGeometry height="40" width="130" x="1170" y="1560" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-127" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-126" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-82">
           <mxGeometry relative="1" as="geometry" />
@@ -719,33 +562,27 @@
         <mxCell id="nLANp58avmLg9mOFybGD-128" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-129" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-82">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="860" y="1810" />
-              <mxPoint x="860" y="1810" />
+              <mxPoint x="1330" y="1640" />
+              <mxPoint x="1330" y="1580" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-129" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;" value="&lt;b&gt;&lt;strike&gt;RECORD&lt;/strike&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="130" x="720" y="1790" as="geometry" />
+          <mxGeometry height="40" width="130" x="1170" y="1620" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-130" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-131" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-138">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1240" y="1320" as="targetPoint" />
+            <mxPoint x="1690" y="1240" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-131" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;spacingTop=0;spacingLeft=8;spacingRight=8;" value="ExecStart" vertex="1">
-          <mxGeometry height="40" width="120" x="1080" y="1300" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-132" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-139">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-133" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;spacingTop=0;spacingLeft=8;spacingRight=8;" value="ExecStop" vertex="1">
-          <mxGeometry height="40" width="120" x="1080" y="1360" as="geometry" />
+          <mxGeometry height="40" width="120" x="1530" y="1220" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-134" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;" value="&lt;b&gt;RECORD&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="130" x="1410" y="1300" as="geometry" />
+          <mxGeometry height="40" width="130" x="1910" y="1220" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-135" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;fixedSize=1;size=10;fillColor=#d80073;strokeColor=#A50040;fontColor=#ffffff;" value="&lt;b&gt;&lt;strike&gt;RECORD&lt;/strike&gt;&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="130" x="1410" y="1360" as="geometry" />
+          <mxGeometry height="40" width="130" x="1910" y="1280" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-136" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="nLANp58avmLg9mOFybGD-134">
           <mxGeometry relative="1" as="geometry" />
@@ -753,113 +590,58 @@
         <mxCell id="nLANp58avmLg9mOFybGD-137" edge="1" parent="1" source="nLANp58avmLg9mOFybGD-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="nLANp58avmLg9mOFybGD-135">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="1380" y="1320" />
-              <mxPoint x="1380" y="1380" />
+              <mxPoint x="1830" y="1240" />
+              <mxPoint x="1830" y="1300" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-138" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;" value="&lt;b&gt;Start/stop&lt;/b&gt;&lt;div&gt;&lt;i style=&quot;&quot;&gt;record&lt;/i&gt;&lt;b&gt; service&lt;/b&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="110" x="1240" y="1300" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-139" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=1;strokeColor=#FF0000;" value="&lt;b&gt;Ensure record service active&lt;/b&gt;" vertex="1">
-          <mxGeometry height="40" width="110" x="1240" y="1360" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-140" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=center;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Relevant ?&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="110" x="1240" y="1460" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-141" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4.62809917355372;endSize=3.978512396694215;endWidth=9.262109551833408;fillColor=#f5f5f5;strokeColor=#666666;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="1300" y="1450" as="sourcePoint" />
-            <mxPoint x="1300" y="1410" as="targetPoint" />
-          </mxGeometry>
+          <mxGeometry height="40" width="110" x="1680" y="1220" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-142" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=left;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;TBD: &lt;span style=&quot;font-weight: 400;&quot;&gt;What if software trigger ?&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;Shall activate this systemd service or use another trigger mechanism ?&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="70" width="220" x="590" y="1220" as="geometry" />
+          <mxGeometry height="70" width="220" x="1040" y="1140" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-143" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4.62809917355372;endSize=3.978512396694215;endWidth=9.262109551833408;fillColor=#f5f5f5;strokeColor=#666666;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="820" y="1240" as="sourcePoint" />
-            <mxPoint x="860" y="1240" as="targetPoint" />
+            <mxPoint x="1270" y="1160" as="sourcePoint" />
+            <mxPoint x="1310" y="1160" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-144" edge="1" parent="1" style="endArrow=halfCircle;html=1;rounded=0;strokeWidth=2;dashed=1;dashPattern=8 8;strokeColor=#330000;startArrow=halfCircle;startFill=0;endFill=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="550" y="1540" as="sourcePoint" />
-            <mxPoint x="2040" y="1540" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-145" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=left;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;TBD: &lt;span style=&quot;font-weight: 400;&quot;&gt;Define action&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="110" x="1470" y="470" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-146" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4.62809917355372;endSize=3.978512396694215;endWidth=9.262109551833408;fillColor=#f5f5f5;strokeColor=#666666;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <Array as="points">
-              <mxPoint x="1319.72" y="650" />
-            </Array>
-            <mxPoint x="1319.72" y="640" as="sourcePoint" />
-            <mxPoint x="1319.72" y="680" as="targetPoint" />
+            <mxPoint x="1000" y="1360" as="sourcePoint" />
+            <mxPoint x="2490" y="1360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-147" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=left;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;Ensure: &lt;span style=&quot;font-weight: 400;&quot;&gt;Running command in systemd service directly will always kill process properly&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="260" x="1430" y="690" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-148" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4.62809917355372;endSize=3.978512396694215;endWidth=9.262109551833408;fillColor=#f5f5f5;strokeColor=#666666;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <Array as="points">
-              <mxPoint x="1450" y="760" />
-            </Array>
-            <mxPoint x="1450" y="740" as="sourcePoint" />
-            <mxPoint x="1410" y="770" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-149" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4.62809917355372;endSize=3.978512396694215;endWidth=9.262109551833408;fillColor=#f5f5f5;strokeColor=#666666;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <Array as="points">
-              <mxPoint x="1400" y="1630" />
-              <mxPoint x="1400" y="1680" />
-              <mxPoint x="1400" y="1730" />
-            </Array>
-            <mxPoint x="1420" y="1610" as="sourcePoint" />
-            <mxPoint x="1380" y="1750" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-150" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4.62809917355372;endSize=3.978512396694215;endWidth=9.262109551833408;fillColor=#f5f5f5;strokeColor=#666666;" value="">
-          <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="1900" y="1630" as="sourcePoint" />
-            <mxPoint x="1900" y="1870" as="targetPoint" />
-          </mxGeometry>
+          <mxGeometry height="40" width="260" x="1690" y="570" as="geometry" />
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-151" edge="1" parent="1" style="endArrow=halfCircle;html=1;rounded=0;strokeWidth=2;dashed=1;dashPattern=8 8;strokeColor=#330000;startArrow=halfCircle;startFill=0;endFill=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="550" y="1970" as="sourcePoint" />
-            <mxPoint x="2040" y="1970" as="targetPoint" />
+            <mxPoint x="1000" y="1710" as="sourcePoint" />
+            <mxPoint x="2490" y="1710" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="nLANp58avmLg9mOFybGD-152" edge="1" parent="1" style="endArrow=halfCircle;html=1;rounded=0;strokeWidth=2;dashed=1;dashPattern=8 8;strokeColor=#330000;startArrow=halfCircle;startFill=0;endFill=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="550" y="320" as="sourcePoint" />
-            <mxPoint x="2040" y="320" as="targetPoint" />
+            <mxPoint x="1000" y="360" as="sourcePoint" />
+            <mxPoint x="2490" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-153" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=center;fontColor=#FF0000;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;TBD (sanity-check). From previous arch version&lt;/font&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="50" width="640" x="2160" y="220" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-154" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=left;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;ENSURE: &lt;span style=&quot;font-weight: 400;&quot;&gt;Doable with no PID exposed ?&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="30" width="440" x="910" y="1580" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-155" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontStyle=1;align=left;fontColor=#333333;strokeWidth=2;dashed=1;dashPattern=1 1;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Relevant ?&lt;/span&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="40" width="130" x="1630" y="1700" as="geometry" />
-        </mxCell>
-        <mxCell id="nLANp58avmLg9mOFybGD-156" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4.62809917355372;endSize=3.978512396694215;endWidth=9.262109551833408;fillColor=#f5f5f5;strokeColor=#666666;" value="">
+        <mxCell id="I38ME_5yGKwVHBBK8_Ku-1" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4.62809917355372;endSize=3.978512396694215;endWidth=9.262109551833408;fillColor=#f5f5f5;strokeColor=#666666;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
             <Array as="points">
-              <mxPoint x="1780" y="1720" />
-              <mxPoint x="1790" y="1720" />
-              <mxPoint x="1790" y="1730" />
-              <mxPoint x="1790" y="1780" />
+              <mxPoint x="1850" y="1570" />
+              <mxPoint x="1840" y="1580" />
             </Array>
-            <mxPoint x="1770" y="1720" as="sourcePoint" />
-            <mxPoint x="1770" y="1780" as="targetPoint" />
+            <mxPoint x="1850" y="1450" as="sourcePoint" />
+            <mxPoint x="1810" y="1580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I38ME_5yGKwVHBBK8_Ku-2" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;width=4.62809917355372;endSize=3.978512396694215;endWidth=9.262109551833408;fillColor=#f5f5f5;strokeColor=#666666;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="1769.71" y="620" as="sourcePoint" />
+            <mxPoint x="1769.71" y="660" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
