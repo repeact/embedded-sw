@@ -14,7 +14,7 @@ _deploy-toolchain:
 	ssh $(DEVICE_NAME) "chmod +x ~/tools/uninstall.sh"
 
 first-install: _deploy-pkg _deploy-toolchain
-	echo "$(SUDO)" | ssh $(DEVICE_NAME) "sudo -S ~/scripts/install.sh --update --upgrade"
+	echo "$(SUDO)" | ssh $(DEVICE_NAME) "sudo -S ~/tools/install.sh --update --upgrade"
 
 install: _deploy-pkg _deploy-toolchain
 	echo "$(SUDO)" | ssh $(DEVICE_NAME) "sudo -S ~/tools/install.sh"
