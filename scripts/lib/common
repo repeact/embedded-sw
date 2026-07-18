@@ -49,6 +49,9 @@ sudo_check() {
 
 # Wrapper around v4l2-ctl.
 # Stderr is always suppressed; the calling stage checks exit codes and emits its own error messages.
+#
+# IMPORTANT: 4l2-ctl exit code are not documented (returns 1 for any error). However a detailed log message is thrown.
+# For debug prupose, on unknown errors, one could update this function to add message logging on error based on a dedicated debug flag
 v4l2() {
     v4l2-ctl "$@" 2> /dev/null
 }
