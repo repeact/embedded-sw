@@ -1,42 +1,37 @@
 # =============================================================================
 # common scripts functions
-#
-# Log levels :
-#   debug    Verbose detail; only emitted when DEBUG=1        (white)
-#   info     General operational messages                     (white)
-#   notice   Significant but normal events                    (white)
-#   warning  Unexpected condition; script continues           (orange)
-#   err      Fatal failure; caller should exit immediately    (red)
 # =============================================================================
 
-# ANSI colours
-# Only when stdout is an interactive terminal
-if [ -t 1 ]; then
-    _COLOR_WHITE="\033[0;37m"
-    _COLOR_ORANGE="\033[0;33m"
-    _COLOR_RED="\033[0;31m"
-    _COLOR_RESET="\033[0m"
-else
-    _COLOR_WHITE=""
-    _COLOR_ORANGE=""
-    _COLOR_RED=""
-    _COLOR_RESET=""
-fi
-
+# =============================================================================
+# Log levels (mapped to syslog/journald priorities):
+#   debug    7  Verbose detail; only emitted when DEBUG=1
+#   info     6  General operational messages
+#   notice   5  Significant but normal events
+#   warning  4  Unexpected condition; script continues
+#   err      3  Fatal failure; caller should exit immediately
+# =============================================================================
 log() {
     local LEVEL="$1"
     local MSG="$2"
     if [ "$LEVEL" = "debug" ] && [ "${DEBUG:-0}" != "1" ]; then
         return
     fi
-    local COLOR
-    case "$LEVEL" in
-        debug | info | notice) COLOR="$_COLOR_WHITE" ;;
-        warning) COLOR="$_COLOR_ORANGE" ;;
-        err) COLOR="$_COLOR_RED" ;;
-        *) COLOR="$_COLOR_RESET" ;;
-    esac
-    printf "${COLOR}[%-7s]${_COLOR_RESET} %s\n" "${LEVEL^^}" "$MSG" >&2
+
+    # $JOURNAL_STREAM is set by systemd only when this process's stderr is connected directly to journald
+    if [ -n "${JOURNAL_STREAM:-}" ]; then
+        local PRIORITY
+        case "$LEVEL" in
+            debug)   PRIORITY=7 ;;
+            info)    PRIORITY=6 ;;
+            notice)  PRIORITY=5 ;;
+            warning) PRIORITY=4 ;;
+            err)     PRIORITY=3 ;;
+            *)       PRIORITY=6 ;;
+        esac
+        printf "<%d>%s: %s\n" "$PRIORITY" "${LEVEL^^}" "$MSG" >&2
+    else
+        printf "%s: %s\n" "${LEVEL^^}" "$MSG" >&2
+    fi
 }
 
 sudo_check() {
