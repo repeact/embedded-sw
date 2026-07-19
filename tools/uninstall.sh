@@ -7,7 +7,7 @@
 #
 # NOTE: no arch made since "self explaining"
 # =============================================================================
-set -uo pipefail
+set -euo pipefail
 
 declare -r UNINSTALL_SOURCE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
