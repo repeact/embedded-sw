@@ -22,29 +22,12 @@ source "$TOOLCHAIN_DIR/lib/errors"
 source "$TOOLCHAIN_DIR/lib/const"
 source "$TOOLCHAIN_DIR/lib/common"
 
-# =============================================================================
-# Parse arguments
-# =============================================================================
+declare -A ARG_MAP=(
+    [--upgrade]="DO_UPGRADE"
+    [--update]="DO_UPDATE"
+)
 declare DO_UPGRADE=false
 declare DO_UPDATE=false
-
-parse_args() {
-    for ARG in "$@"; do
-        case "$ARG" in
-            --upgrade)
-                DO_UPGRADE=true
-                ;;
-            --update)
-                DO_UPDATE=true
-                ;;
-            *)
-                log "err" "Unknown option: $ARG"
-                log "info" "Usage: sudo install.sh [--upgrade]"
-                exit "$ERR_INVALID_ARG"
-                ;;
-        esac
-    done
-}
 
 # =============================================================================
 # Deploy package files

@@ -55,3 +55,31 @@ sudo_check() {
 v4l2() {
     v4l2-ctl "$@" 2> /dev/null
 }
+
+# Generic CLI flag parser.
+# Caller pre-declares ARG_MAP (flag -> variable name)
+# Any flag present on the command line sets its mapped variable to "true".
+#
+#   declare -A ARG_MAP=(
+#       [--upgrade]="DO_UPGRADE"
+#       [--update]="DO_UPDATE"
+#   )
+#   declare DO_UPGRADE=false
+#   declare DO_UPDATE=false
+#
+#   parse_args "$@"
+#
+parse_args() {
+    local ARG
+    local VAR_NAME
+
+    for ARG in "$@"; do
+        if [[ -v ARG_MAP["$ARG"] ]]; then
+            VAR_NAME="${ARG_MAP[$ARG]}"
+            declare -g "$VAR_NAME"=true
+        else
+            log "err" "Unknown option: $ARG"
+            exit "$ERR_INVALID_ARG"
+        fi
+    done
+}
