@@ -46,16 +46,19 @@ sudo_check() {
     fi
 }
 
+# =============================================================================
 # Wrapper around v4l2-ctl. Stderr is suppressed; callers check the exit code
 # and log their own error message.
 #
 # NOTE: v4l2-ctl exit codes are undocumented (returns 1 on any error), though
 # it does print a detailed message to stderr. For debugging, log that message
 # here behind a DEBUG flag if needed.
+# =============================================================================
 v4l2() {
     v4l2-ctl "$@" 2> /dev/null
 }
 
+# =============================================================================
 # Generic CLI flag parser.
 # Caller pre-declares ARG_MAP (flag -> variable name)
 # Any flag present on the command line sets its mapped variable to "true".
@@ -69,6 +72,7 @@ v4l2() {
 #
 #   parse_args "$@"
 #
+# =============================================================================
 parse_args() {
     local ARG
     local VAR_NAME
