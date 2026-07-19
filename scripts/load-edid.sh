@@ -1,6 +1,11 @@
 #!/bin/bash
 # =============================================================================
-# HW bridge edid loader (video0)
+# Hardware bridge setup: edid loader.
+# This script will be triggered by systemd/udev when HDMI to CSI bridge is available.
+# (TC358743, v4l2 video0 node)
+#
+# NOTE: This "script" failing is a fatal error and SHALL be handled (hence related service).
+# Failure means that the bridge is not linked to MCU: device hardware issue only (not user end).
 # =============================================================================
 set -euo pipefail
 
