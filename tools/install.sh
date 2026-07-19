@@ -11,7 +11,7 @@
 #   --upgrade   Also run apt-get upgrade before installing dependencies.
 #               Recommended on first install. Omit for faster re-runs.
 # =============================================================================
-set -uo pipefail
+set -euo pipefail
 
 declare -r TOOLCHAIN_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 

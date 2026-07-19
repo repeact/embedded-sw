@@ -7,7 +7,7 @@
 # USAGE:
 #   sudo ./test-install.sh
 # =============================================================================
-set -uo pipefail
+set -euo pipefail
 
 declare -r TOOLCHAIN_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
