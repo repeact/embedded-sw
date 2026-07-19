@@ -39,7 +39,6 @@ log() {
     printf "${COLOR}[%-7s]${_COLOR_RESET} %s\n" "${LEVEL^^}" "$MSG" >&2
 }
 
-# Note: ensure that files is sourced after errors (since error dependencies)
 sudo_check() {
     if [ "$EUID" -ne 0 ]; then
         log "err" "Must be run as root: sudo $(basename "$0")"
@@ -47,11 +46,12 @@ sudo_check() {
     fi
 }
 
-# Wrapper around v4l2-ctl.
-# Stderr is always suppressed; the calling stage checks exit codes and emits its own error messages.
+# Wrapper around v4l2-ctl. Stderr is suppressed; callers check the exit code
+# and log their own error message.
 #
-# IMPORTANT: 4l2-ctl exit code are not documented (returns 1 for any error). However a detailed log message is thrown.
-# For debug prupose, on unknown errors, one could update this function to add message logging on error based on a dedicated debug flag
+# NOTE: v4l2-ctl exit codes are undocumented (returns 1 on any error), though
+# it does print a detailed message to stderr. For debugging, log that message
+# here behind a DEBUG flag if needed.
 v4l2() {
     v4l2-ctl "$@" 2> /dev/null
 }
