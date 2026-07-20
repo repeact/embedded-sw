@@ -45,8 +45,5 @@ declare -gra SETTINGS=(
     "gpu_mem=128"
 )
 
-# Edid path
 declare -gr EDID_FILE="edid.hex"
-
-# HW bridge target (DTO)
 declare -gr VIDEO_DEVICE="/dev/video0"
