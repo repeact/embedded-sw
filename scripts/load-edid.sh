@@ -39,7 +39,7 @@ load_edid() {
         exit "$ERR_FILE_NOT_FOUND"
     fi
 
-    if ! v4l2 -d "$VIDEO_DEVICE" --set-edid=file="$edid_path" > /dev/null; then
+    if ! v4l2 -d "$VIDEO_DEVICE" --set-edid=file="$edid_path"; then
         log "err" "Video device not found: $VIDEO_DEVICE"
         exit "$ERR_VIDEO_DEVICE_NOT_FOUND"
     fi
