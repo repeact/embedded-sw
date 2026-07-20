@@ -22,5 +22,10 @@ readonly ERR_SYS_UPGRADE=13
 readonly ERR_DEP_UPDATE=14
 readonly ERR_BOOT_CONF_NOT_FOUND=15
 
+# [20-24] Source available daemon
+readonly ERR_SOURCE_CHANGED_EVENT_FAIL=20
+readonly ERR_INPUT_STATUS_QUERY=21
+readonly ERR_INPUT_STATUS_NO_DATA=22
+
 # [100+ ] Atomic errors
 readonly ERR_VIDEO_DEVICE_NOT_FOUND=100
