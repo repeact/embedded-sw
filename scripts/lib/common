@@ -82,3 +82,34 @@ parse_args() {
         fi
     done
 }
+
+# =============================================================================
+# Generic command dispatcher.
+# Caller pre-declares CMD_MAP (command -> function name).
+# Run mapped function for "$1".
+#
+#   declare -A CMD_MAP=(
+#       [wait_for_event]="wait_for_event"
+#       [manage_service]="manage_service"
+#   )
+#
+#   dispatch "$@"
+#
+# =============================================================================
+dispatch() {
+    local CMD="$1"
+    local FN_NAME
+
+    if [[ -z "$CMD" ]]; then
+        log "err" "No command given"
+        exit "$ERR_INVALID_ARG"
+    fi
+
+    if [[ -v CMD_MAP["$CMD"] ]]; then
+        FN_NAME="${CMD_MAP[$CMD]}"
+        "$FN_NAME"
+    else
+        log "err" "Unknown command: $CMD"
+        exit "$ERR_INVALID_ARG"
+    fi
+}
