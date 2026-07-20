@@ -19,6 +19,7 @@ declare -gr PKG_FFMPEG="ffmpeg=8:7.1*"
 # (chmod +x + symlinked to $SYMLINK_DIR)
 declare -gra EXECUTABLES=(
     "load-edid.sh"
+    "src-avail-daemon.sh"
 )
 
 # Required dependencies files
@@ -32,6 +33,7 @@ declare -gr DAEMON_SERVICE_CALLEE=""
 
 declare -gra SERVICES=(
     "repeact-video0-setup.service"
+    "repeact-src-avail-daemon.service"
 )
 
 declare -gra RULES=(
