@@ -24,3 +24,6 @@ test-install: _deploy-toolchain
 
 uninstall: _deploy-toolchain
 	echo "$(SUDO)" | ssh $(DEVICE_NAME) "sudo -S ~/tools/uninstall.sh"
+
+reboot:
+	ssh $(DEVICE_NAME) "echo $(SUDO) | sudo -S reboot"
