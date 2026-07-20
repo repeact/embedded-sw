@@ -28,6 +28,8 @@ declare -gra SOURCES=(
     "lib/errors"
 )
 
+declare -gr DAEMON_SERVICE_CALLEE=""
+
 declare -gra SERVICES=(
     "repeact-video0-setup.service"
 )
