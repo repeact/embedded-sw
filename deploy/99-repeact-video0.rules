@@ -1,2 +1,2 @@
 # Expose video0. Tight coupling between this and associated service unit (see arch)
-SUBSYSTEM=="video4linux", KERNEL=="video0", TAG+="systemd", ENV{SYSTEMD_WANTS}="repeact-video0-setup.service"
+SUBSYSTEM=="video4linux", KERNEL=="video0", TAG+="systemd", ENV{SYSTEMD_WANTS}="repeact-video0-setup.service repeact-src-avail-daemon.service"
