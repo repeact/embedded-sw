@@ -65,11 +65,9 @@ manage_service() {
 
     log "info" "Managing service depending on source avail/unavail for $VIDEO_DEVICE"
     if [[ "$signal_bit_value" -eq 0 ]]; then
-        # systemctl start "$DAEMON_SERVICE_CALLEE"
-        :
+        systemctl start "$DAEMON_SERVICE_CALLEE"
     else
-        # systemctl stop "$DAEMON_SERVICE_CALLEE"
-        :
+        systemctl stop "$DAEMON_SERVICE_CALLEE"
     fi
 
     exit "$ERR_OK"

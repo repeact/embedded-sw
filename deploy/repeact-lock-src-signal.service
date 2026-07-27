@@ -1,0 +1,9 @@
+[Unit]
+Description=Repeact source handler, lock source once available (dv-timings, video-format)
+BindsTo=repeact-video0-setup.service
+After=repeact-video0-setup.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/etc/repeact/lock-src-signal.sh
