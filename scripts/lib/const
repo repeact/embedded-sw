@@ -20,6 +20,7 @@ declare -gr PKG_FFMPEG="ffmpeg=8:7.1*"
 declare -gra EXECUTABLES=(
     "load-edid.sh"
     "src-avail-daemon.sh"
+    "lock-src-signal.sh"
 )
 
 # Required dependencies files
@@ -51,3 +52,5 @@ declare -gra SETTINGS=(
 
 declare -gr EDID_FILE="edid.hex"
 declare -gr VIDEO_DEVICE="/dev/video0"
+
+declare -gr REQUIRED_PIX_FMT="UYVY" # /!\ REQUIRED
