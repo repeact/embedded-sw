@@ -42,28 +42,63 @@ declare -gA signal=([pix_fmt]="" [width]="" [height]="" [framerate]="")
 # Helpers
 # =============================================================================
 report_config() {
+    local stage="${1:-Configuration}"
+    log "info" "$stage: ${signal[width]}x${signal[height]}p@${signal[framerate]}fps|${signal[pix_fmt]}"
 }
 
 # Check if signal[pix_fmt] is already up to date (matches required pixel format).
 pixel_fmt_matches() {
+    [[ "${signal[pix_fmt]}" == "$REQUIRED_PIX_FMT" ]]
 }
 
 # =============================================================================
 # Getters
 # =============================================================================
 read_timings() {
+    local dv_timings
+
+    log "info" "Reading video configuration"
+    # NOTE: no call to "v4l2" wrapper: stout is required for dv-timings settings parsing
+    if ! dv_timings=$(v4l2-ctl -d "$VIDEO_DEVICE" --query-dv-timings 2> /dev/null); then
+        log "err" "Could not query $VIDEO_DEVICE dv-timings"
+        exit "$ERR_QUERY_TIMINGS"
+    fi
+
+    signal[framerate]="$(awk -F'(' '/frames per second/{split($2,a," "); print int(a[1])}' <<< "$dv_timings")"
+    signal[width]="$(awk '/Active width/{print $NF}' <<< "$dv_timings")"
+    signal[height]="$(awk '/Active height/{print $NF}' <<< "$dv_timings")"
 }
 
 read_pixel_fmt() {
+    local fmt_video
+
+    log "info" "Reading pixel format"
+    # NOTE: no call to "v4l2" wrapper: stout is required for pixel settings parsing
+    if ! fmt_video=$(v4l2-ctl -d "$VIDEO_DEVICE" --get-fmt-video 2> /dev/null); then
+        log "err" "Could not read current pixel format on $VIDEO_DEVICE"
+        exit "$ERR_READ_FMT_VIDEO"
+    fi
+
+    signal[pix_fmt]="$(awk -F"'" '/Pixel Format/{print $2}' <<< "$fmt_video")"
 }
 
 # =============================================================================
 # Setters
 # =============================================================================
 update_pixel_fmt() {
+    log "info" "Setting new pixel format: \"${REQUIRED_PIX_FMT}\""
+    if ! v4l2 -d "$VIDEO_DEVICE" --set-fmt-video=pixelformat="$REQUIRED_PIX_FMT"; then
+        log "err" "Could not set new pixel format: \"${REQUIRED_PIX_FMT}\""
+        exit "$ERR_WRITE_PIXEL_FMT"
+    fi
 }
 
 lock_timings() {
+    log "info" "Locking video timings"
+    if ! v4l2 -d "$VIDEO_DEVICE" --set-dv-bt-timings query; then
+        log "err" "Could not lock video timings"
+        exit "$ERR_LOCK_SIGNAL"
+    fi
 }
 
 main() {

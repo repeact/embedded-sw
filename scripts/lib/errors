@@ -27,5 +27,11 @@ readonly ERR_SOURCE_CHANGED_EVENT_FAIL=20
 readonly ERR_INPUT_STATUS_QUERY=21
 readonly ERR_INPUT_STATUS_NO_DATA=22
 
+# [25-29] Negotiate source signal
+readonly ERR_READ_FMT_VIDEO=25
+readonly ERR_WRITE_PIXEL_FMT=26
+readonly ERR_QUERY_TIMINGS=27
+readonly ERR_LOCK_SIGNAL=28
+
 # [100+ ] Atomic errors
 readonly ERR_VIDEO_DEVICE_NOT_FOUND=100
