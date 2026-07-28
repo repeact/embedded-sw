@@ -7,3 +7,5 @@ After=repeact-video0-setup.service
 Type=oneshot
 RemainAfterExit=yes
 ExecStart=/etc/repeact/lock-src-signal.sh
+Restart=on-failure
+RestartSec=10ms
