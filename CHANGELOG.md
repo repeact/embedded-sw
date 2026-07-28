@@ -1,4 +1,35 @@
 # Changelog
+## 0.4.0 (2026-07-28)
+
+### Feat
+
+- **deploy**: implement lock-src-signal service unit
+- **tools**: implements lock-src-signal scripts
+- **deploy**: add source available unit
+- **scripts**: implement src-avail-daemon
+- **lib**: add a dispatch utility
+- **lib**: extend logging to journald
+- **deploy**: implement video0 units
+- **tools**: implement load-edid script
+- **tools**: add unit removal to uninstall script
+- **tools**: add unit deployment to install script
+- **tools**: implement uninstall script
+- add deployment targets
+
+### Fix
+
+- fix daemon script and lock-src unit deadlock
+- add missing pipefail rule for tools (un/install) and test scripts
+- fix script location of first-install make recipe
+- **tools**: patch variable expansion bug on symlink removal
+
+### Refactor
+
+- add v4l2 wrapper stdout suppression
+- **lib**: migrate local parse_args function to a global one
+- **targets**: update make recipes w/ new tooclchain setup
+- **toolchain**: group all toolchain related script
+
 ## 0.3.0 (2026-06-21)
 
 ### Feat
