@@ -51,7 +51,7 @@ declare -gra SETTINGS=(
     "gpu_mem=128"
 )
 
-declare -gr EDID_FILE="edid.hex"
+declare -gr EDID_FILE="edid_1080.hex"
 declare -gr VIDEO_DEVICE="/dev/video0"
 
 declare -gr REQUIRED_PIX_FMT="UYVY" # /!\ REQUIRED
