@@ -1,5 +1,5 @@
 <!-- 
-AI written documentation based on Angular conventionnal commits.
+AI written documentation based on Angular conventional commits.
 Covered topics and rules defined and reviewed by developpers
 -->
 

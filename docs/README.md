@@ -25,7 +25,7 @@ HDMI recorder for movie script supervisors.
 
 ## GitHub Actions runner
 
-[GH action self-hoster runner setup](github-runner-setup.md)
+[GitHub Actions self-hosted runner setup](github-runner-setup.md).
 
 > [!WARNING]
 > Complete runner setup before triggering any CI/CD job.  

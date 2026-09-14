@@ -79,7 +79,8 @@ Accept the device fingerprint when prompted.
 
 ### Make autocompletion
 
-Edit or create etiher ``.bashrc`` or ``.bash_profile``, in your home directory ``~/``.  
+<!-- See https://stackoverflow.com/questions/4188324/bash-completion-of-makefile-target -->
+Edit or create either ``.bashrc`` or ``.bash_profile``, in your home directory ``~/``.  
 Add this line: 
 ```
 complete -W "\`grep -oE '^[a-zA-Z0-9_.-]+:([^=]|$)' ?akefile | sed 's/[^a-zA-Z0-9_.-]*$//'\`" make
@@ -94,7 +95,7 @@ And source the new config with ``source ~/.bashrc`` or ``source ~/.bash_profile`
 Run all commands from project root folder (default: `embedded-sw`).
 
 > [!NOTE] 
-> You can specify your device hostname/sudo password using ``DEVICE_NAME`` and ``SUDO`` optionnal arguments.  
+> You can specify your device hostname/sudo password using ``DEVICE_NAME`` and ``SUDO`` optional arguments.  
 > Defaults to: see [Makefile](../Makefile)
 
 #### First install
