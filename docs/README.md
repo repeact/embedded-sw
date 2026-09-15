@@ -2,12 +2,6 @@
 
 HDMI recorder for movie script supervisors.
 
-- [Repeact recorder (embedded-sw)](#repeact-recorder-embedded-sw)
-  - [Project commit ruleset](#project-commit-ruleset)
-  - [Setup and run project](#setup-and-run-project)
-  - [Run tests](#run-tests)
-  - [GitHub Actions runner](#github-actions-runner)
-
 ## Project commit ruleset
 
 [Project commit convention](commits-style.md).  
@@ -15,13 +9,24 @@ HDMI recorder for movie script supervisors.
 > [!WARNING]
 > Each commit on this repo **shall** follow/comply with this ruleset. 
 
-## Setup and run project
+## Project layout
+
+| Folder / file         | Content                                         |
+| --------------------- | ----------------------------------------------- |
+| `docs/`               | Project documentation and architecture diagrams |
+| `config/`             | Project configuration files                     |
+| `scripts/`            | Runtime scripts and shared library              |
+| `deploy/`             | System integration units *(udev/systemd...)*    |
+| `debian/`             | Debian packaging files                          |
+| `Makefile` && `build` | Build toolchain                                 |
+
+## Setup project
 
 [Project HW and SW setup](setup.md).
 
-## Run tests
+## Build and install
 
-[Tests documentation](tests.md).
+[Debian package documentation](package.md).
 
 ## GitHub Actions runner
 
