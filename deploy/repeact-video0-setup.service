@@ -6,5 +6,5 @@ BindsTo=dev-video0.device
 [Service]
 Type=oneshot
 RemainAfterExit=yes
-ExecStart=/etc/repeact/load-edid.sh
+ExecStart=/usr/lib/repeact/load-edid.sh
 Restart=on-failure

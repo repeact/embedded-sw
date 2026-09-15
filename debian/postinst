@@ -1,0 +1,40 @@
+#!/bin/bash
+# =============================================================================
+# Link /boot/firmware/repeact.txt to config.txt.
+# Avoid direct write to default config.txt by only adding an "include"
+# Add a reboot flag (required when editing boot config).
+# =============================================================================
+
+# TODO: add target protection
+# Only RPI hardware w/ recent OS version
+# (/boot/firmaware/config.txt and not boot/config.txt like in older OS releases)
+
+set -e
+
+INCLUDE_DIRECTIVE="include repeact.txt"
+HW_CONFIG_FILE="/boot/firmware/config.txt"
+
+case "$1" in
+    configure)
+        if ! grep -qxF "$INCLUDE_DIRECTIVE" "$HW_CONFIG_FILE"; then
+            printf '%s\n' "$INCLUDE_DIRECTIVE" >> "$HW_CONFIG_FILE"
+
+            # Register a reboot is needed
+            # https://www.cyberciti.biz/faq/how-to-find-out-if-my-ubuntudebian-linux-server-needs-a-reboot/
+            touch /run/reboot-required
+
+            # Avoid mutiple notifications
+            if ! grep -qxF "repeact" /run/reboot-required.pkgs 2>/dev/null; then
+                echo "repeact" >> /run/reboot-required.pkgs
+            fi
+
+            echo ""
+            echo "***[Reboot required to complete repeact package installation]***"
+            echo ""
+        fi
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

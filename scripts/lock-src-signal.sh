@@ -18,9 +18,9 @@
 # =============================================================================
 set -euo pipefail
 
-source "/etc/repeact/lib/errors"
-source "/etc/repeact/lib/const"
-source "/etc/repeact/lib/common"
+source "/usr/lib/repeact/lib/errors"
+source "/usr/lib/repeact/lib/const"
+source "/usr/lib/repeact/lib/common"
 
 # =============================================================================
 # Source state

@@ -1,0 +1,37 @@
+#!/bin/bash
+# =============================================================================
+# Remove /boot/firmware/repeact.txt from config.txt.
+# Also add a reboot flag (required when editing boot config).
+#
+# Very similar to `postinst`
+# =============================================================================
+set -e
+
+INCLUDE_DIRECTIVE="include repeact.txt"
+HW_CONFIG_FILE="/boot/firmware/config.txt"
+
+case "$1" in
+    purge|remove)
+        if [ -f "$HW_CONFIG_FILE" ]; then
+            if grep -qxF "$INCLUDE_DIRECTIVE" "$HW_CONFIG_FILE"; then
+                sed -i "\|^${INCLUDE_DIRECTIVE}\$|d" "$HW_CONFIG_FILE"
+
+                # See "postinst" documentation file
+                touch /run/reboot-required
+
+                # See "postinst" documentation file
+                if ! grep -qxF "repeact" /run/reboot-required.pkgs 2>/dev/null; then
+                    echo "repeact" >> /run/reboot-required.pkgs
+                fi
+
+                echo ""
+                echo "***[Reboot required to complete repeact package removal]***"
+                echo ""
+            fi
+        fi
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

@@ -7,8 +7,8 @@ After=repeact-video0-setup.service
 Type=exec
 # Required for boot with an already source available.
 # Sidekick: safety feature
-ExecStartPre=/etc/repeact/src-avail-daemon.sh manage_service
-ExecStart=/etc/repeact/src-avail-daemon.sh wait_for_event
-ExecStopPost=/etc/repeact/src-avail-daemon.sh manage_service
+ExecStartPre=/usr/lib/repeact/src-avail-daemon.sh manage_service
+ExecStart=/usr/lib/repeact/src-avail-daemon.sh wait_for_event
+ExecStopPost=/usr/lib/repeact/src-avail-daemon.sh manage_service
 Restart=on-success
 RestartSec=500ms

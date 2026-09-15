@@ -11,3 +11,11 @@
 
 # Office Calc
 *.ods#
+
+# ============================
+# Debian toolchain
+# ============================
+pkg/
+# Temporary build dir, shall be deleted after build
+# Safety policy (remove if needed)
+_build
