@@ -1,8 +1,3 @@
-<!-- 
-AI written documentation based on Angular conventional commits.
-Covered topics and rules defined and reviewed by developpers
--->
-
 # Commit Convention
 
 This project follows the [Conventional Commits](https://www.conventionalcommits.org/) specification, based on [Angular commit message guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).

@@ -1,8 +1,4 @@
 # =============================================================================
-# common scripts functions
-# =============================================================================
-
-# =============================================================================
 # Log levels (mapped to syslog/journald priorities):
 #   debug    7  Verbose detail; only emitted when DEBUG=1
 #   info     6  General operational messages

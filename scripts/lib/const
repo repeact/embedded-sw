@@ -1,7 +1,3 @@
-# =============================================================================
-# Project constants
-# =============================================================================
-
 declare -gr DAEMON_SERVICE_CALLEE="repeact-lock-src-signal.service"
 
 declare -gr VIDEO_DEVICE="/dev/video0"
