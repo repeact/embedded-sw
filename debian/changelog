@@ -1,0 +1,5 @@
+repeact (0.4.0-1) unstable; urgency=medium
+
+  * Initial Debian packaging.
+
+ -- Guillaume de Maricourt <yyy.xxx@gmail.com>  Tue, 15 Sep 2026 12:00:00 +0000
