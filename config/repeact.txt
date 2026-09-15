@@ -1,0 +1,4 @@
+camera_auto_detect=0
+dtoverlay=tc358743
+dtoverlay=cma,cma-128
+gpu_mem=128

@@ -1,0 +1,28 @@
+#!/bin/bash
+set -e
+
+# Run from the repo root, wherever this script is invoked from
+REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+cd "$REPO_ROOT"
+
+PKG_NAME=$(dpkg-parsechangelog -S Source)
+PKG_VERSION=$(dpkg-parsechangelog -S Version)
+
+BUILD_DIR="_build"
+OUT_DIR="pkg"
+
+rm -rf "$BUILD_DIR"
+mkdir -p "$BUILD_DIR" "$OUT_DIR"
+
+rsync -a --exclude="$BUILD_DIR" --exclude="$OUT_DIR" --exclude=.git --exclude=Makefile ./ "$BUILD_DIR/${PKG_NAME}-${PKG_VERSION}/"
+
+(
+    cd "$BUILD_DIR/${PKG_NAME}-${PKG_VERSION}"
+    dpkg-buildpackage --no-sign -tc
+)
+
+mv "$BUILD_DIR/${PKG_NAME}_"* "$OUT_DIR/"
+rm -rf "$BUILD_DIR"
+
+echo "Done — package(s) in ${OUT_DIR}/:"
+ls "$OUT_DIR"

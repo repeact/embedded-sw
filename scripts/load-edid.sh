@@ -26,12 +26,12 @@
 # =============================================================================
 set -euo pipefail
 
-source "/etc/repeact/lib/errors"
-source "/etc/repeact/lib/const"
-source "/etc/repeact/lib/common"
+source "/usr/lib/repeact/lib/errors"
+source "/usr/lib/repeact/lib/const"
+source "/usr/lib/repeact/lib/common"
 
 load_edid() {
-    local edid_path="/etc/repeact/config/$EDID_FILE" # Will be removed, for compatibility only
+    local edid_path="/etc/repeact/$EDID_FILE"
 
     log "info" "Loading EDID from $EDID_FILE"
     if [[ ! -f $edid_path ]]; then

@@ -1,0 +1,16 @@
+# Exec/lib
+scripts/load-edid.sh                     usr/lib/repeact
+scripts/lock-src-signal.sh               usr/lib/repeact
+scripts/src-avail-daemon.sh              usr/lib/repeact
+scripts/lib/common                       usr/lib/repeact/lib
+scripts/lib/const                        usr/lib/repeact/lib
+scripts/lib/errors                       usr/lib/repeact/lib
+config/edid_1080.hex                     etc/repeact
+# config/edid_generic.hex                etc/repeact
+config/repeact.txt                       boot/firmware
+
+# Units
+deploy/repeact-video0-setup.service      usr/lib/systemd/system
+deploy/repeact-lock-src-signal.service   usr/lib/systemd/system
+deploy/repeact-src-avail-daemon.service  usr/lib/systemd/system
+deploy/99-repeact-video0.rules           usr/lib/udev/rules.d
