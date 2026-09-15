@@ -31,13 +31,14 @@ The `subject` must be in lowercase and not end with a period.
 Scopes map to the physical components of the project.  
 Use a scope whenever it adds information the type alone does not carry.
 
-| Scope    | Maps to        | Notes                                                                                                      |
-| -------- | -------------- | ---------------------------------------------------------------------------------------------------------- |
-| `tools`  | `scripts/`     | Any script (install, uninstall, setup, start, stop, rec, …). Name the specific script in the subject line. |
-| `lib`    | `scripts/lib/` | Shared library: `common`, `const`, `errors`                                                                |
-| `config` | `config/`      | Project configuration files                                                                                |
-| `arch`   | `docs/arch/`   | Architecture and design diagrams                                                                           |
-| `deploy` | `deploy/`      | System integration units: udev rules, systemd services, etc. installed on target                           |
+| Scope       | Maps to        |
+| ----------- | -------------- |
+| `arch`      | `docs/arch/`   |
+| `config`    | `config/`      |
+| `tools`     | `scripts/`     |
+| `lib`       | `scripts/lib/` |
+| `deploy`    | `deploy/`      |
+| `packaging` | `debian/`      |
 
 ### When to omit the scope
 
@@ -50,15 +51,18 @@ Some types are self-scoping and rarely need a scope qualifier:
 ## Examples
 
 ```
-feat(tools):   implement uninstall script
-fix(tools):    patch recording stop condition
-refactor(lib): remove shebangs from sourced files
-refactor(lib): reorder error codes by script range
-feat(tools):   add upgrade and update flags to install
-test(tools):   remove dead exit code in install test
-test(lib):     fix test depending on installed sources
-docs:          update setup guide
-docs(arch):    add stop script design
-ci(release):   change workflow trigger to manual
-chore(config): add edid configuration file
+fix(tools):          patch recording stop condition
+feat(tools):         implement setup script
+feat(packaging):     add debian packaging toolchain
+fix(packaging):      correct postrm reboot message
+refactor(packaging): extract boot-config detection into shared helper
+refactor(lib):       remove shebangs from sourced files
+refactor(lib):       reorder error codes by script range
+feat(tools):         add upgrade and update flags to install
+test(tools):         remove dead exit code in install test
+test(lib):           fix test depending on installed sources
+docs:                update setup guide
+docs(arch):          add stop script design
+ci(release):         change workflow trigger to manual
+chore(config):       add edid configuration file
 ```

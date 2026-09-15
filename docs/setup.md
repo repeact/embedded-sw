@@ -1,25 +1,19 @@
 # Setup project
 
 - [Setup project](#setup-project)
-  - [Project prerequisite: HW and workspace setup](#project-prerequisite-hw-and-workspace-setup)
-    - [Install make](#install-make)
-    - [Generate an SSH RSA key](#generate-an-ssh-rsa-key)
-    - [RPi OS setup](#rpi-os-setup)
-    - [SSH host/remote link](#ssh-hostremote-link)
-    - [Setup validation](#setup-validation)
+  - [Install make](#install-make)
+  - [Generate an SSH RSA key](#generate-an-ssh-rsa-key)
+  - [RPi OS setup](#rpi-os-setup)
+  - [SSH host/remote link](#ssh-hostremote-link)
+  - [Setup validation](#setup-validation)
   - [Installation and deployment, from host to remote](#installation-and-deployment-from-host-to-remote)
-    - [Make autocompletion](#make-autocompletion)
-      - [First install](#first-install)
-      - [Re-runs](#re-runs)
-      - [Uninstall](#uninstall)
+  - [Make autocompletion *(optionnal)*](#make-autocompletion-optionnal)
 
-## Project prerequisite: HW and workspace setup
-
-### Install make
+## Install make
 
 To use deployment/test toolchain, ``make`` is required and shall be downloaded.
 
-### Generate an SSH RSA key
+## Generate an SSH RSA key
 
 Open Git Bash or PowerShell and run:
 
@@ -29,7 +23,7 @@ ssh-keygen -t rsa
 
 When prompted for a destination, enter: `~/.ssh/repeact-PI[IDENTIFIER]_id-rsa`
 
-### RPi OS setup
+## RPi OS setup
 
 > [!WARNING]
 > Flash 64-bit version
@@ -44,7 +38,7 @@ Flash **Raspberry Pi OS Lite 64-bit** with the following settings:
 - SSH public key: `~/.ssh/repeact-PI[IDENTIFIER]_id-rsa.pub`
 - RPi Connect: disabled
 
-### SSH host/remote link
+## SSH host/remote link
 
 Create a `config` file in your `~/.ssh/` folder and add the following:
 
@@ -56,7 +50,7 @@ Host repeact
     IdentitiesOnly  yes
 ```
 
-### Setup validation
+## Setup validation
 
 Verify the setup by connecting to the device:
 
@@ -77,9 +71,11 @@ Accept the device fingerprint when prompted.
 
 ## Installation and deployment, from host to remote
 
-### Make autocompletion
+The project is deployed as a Debian package: see [Debian package documentation](package.md).
 
-<!-- See https://stackoverflow.com/questions/4188324/bash-completion-of-makefile-target -->
+## Make autocompletion *(optionnal)*
+
+<!-- ref: https://stackoverflow.com/questions/4188324/bash-completion-of-makefile-target -->
 Edit or create either ``.bashrc`` or ``.bash_profile``, in your home directory ``~/``.  
 Add this line: 
 ```
@@ -87,34 +83,8 @@ complete -W "\`grep -oE '^[a-zA-Z0-9_.-]+:([^=]|$)' ?akefile | sed 's/[^a-zA-Z0-
 ```  
 And source the new config with ``source ~/.bashrc`` or ``source ~/.bash_profile``
 
-> [!IMPORTANT]
-> Adapt the remote host
-> Replace `repeact` with the actual host name of your target device (e.g. `repeact-PI01`).  
-> Replace the password literal `repeact` in `echo "repeact" |` with the actual `root` password.
+Run all commands from project root folder.
 
-Run all commands from project root folder (default: `embedded-sw`).
-
+<!-- TODO: Remove default value and use magic values instead -->
 > [!NOTE] 
-> You can specify your device hostname/sudo password using ``DEVICE_NAME`` and ``SUDO`` optional arguments.  
-> Defaults to: see [Makefile](../Makefile)
-
-#### First install
-
-Run in shell ``make first-install``
-
-Difference with raw ``install`` is the added ``--update`` and ``--upgrade`` flags.  
-Which will run the equivalent ``apt`` commands.
-
-#### Re-runs
-
-Run in a shell ``make install``  
-
-To verify installation, refer to the [run tests](tests.md) documentation.
-
-#### Uninstall
-
-Run in a shell ``make uninstall``  
-
-> [!NOTE] 
-> For this script no arch update has been made since script is self explaining. If complexity increases a dedicated ``uninstall`` arch shall be made.
-> Also no test-uninstall has been made for faster development. Having this kind of script is not relevant because "package" will be migrated to a debian package.
+> Provide your device hostname/sudo password to make using ``DEVICE_NAME`` and ``SUDO`` (optional).
