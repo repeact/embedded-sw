@@ -7,7 +7,7 @@
 # =============================================================================
 # Hardware bridge setup.
 # Load edid file into HDMI bridge.
-# 
+#
 # This script is triggered by udev+systemd units when bridge is available (v4l2 video0 node).
 # EDID is loaded/stored into bridge memory without needing a source available (no cable connected).
 #
@@ -31,7 +31,7 @@ source "/etc/repeact/lib/const"
 source "/etc/repeact/lib/common"
 
 load_edid() {
-    local edid_path="$CONFIG_DIR/$EDID_FILE"
+    local edid_path="/etc/repeact/config/$EDID_FILE" # Will be removed, for compatibility only
 
     log "info" "Loading EDID from $EDID_FILE"
     if [[ ! -f $edid_path ]]; then

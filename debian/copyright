@@ -1,0 +1,17 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: repeact
+Upstream-Contact: Guillaume de Maricourt <yyy.xxx@gmail.com>
+
+Files: *
+Copyright: 2026 Guillaume de Maricourt
+License: proprietary
+ Copyright (c) 2026 Guillaume de Maricourt. All rights reserved.
+ .
+ This software and its associated files are confidential and proprietary.
+ No part of it may be copied, modified, distributed or used without the
+ prior written permission of the copyright holder.
+
+Files: debian/*
+Copyright: 2026 Guillaume de Maricourt
+License: proprietary
+ See the license text for "Files: *" above.
