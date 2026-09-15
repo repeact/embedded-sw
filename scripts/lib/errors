@@ -1,7 +1,5 @@
 # =============================================================================
-# Scripts errors
-#
-# Range policy:
+# Errors policy:
 # - ranges assigned and reserved to specific target(s)
 # - ranged errors shall be prefered
 # - error values after 100 are reserved for atomic errors
