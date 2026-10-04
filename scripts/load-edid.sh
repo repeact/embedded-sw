@@ -20,9 +20,10 @@
 # https://toshiba.semicon-storage.com/info/TC358743XBG_datasheet_en_20260511.pdf?did=35655&prodName=TC358743XBG
 # https://ia801404.us.archive.org/3/items/CEA-861-B/CEA-861-B.pdf
 #
-# Tool references for building custom EDID:
-# https://edid.build/
-# https://thyge.github.io/edid-editor/
+# Custom EDID build tools:
+# [RECOMMENDED] https://www.analogway.com/products/aw-edid-editor
+# [DEPRECATED ] https://edid.build/
+# [DEPRECATED ] https://thyge.github.io/edid-editor/
 # =============================================================================
 set -euo pipefail
 
