@@ -16,7 +16,7 @@ readonly ERR_INPUT_STATUS_QUERY=11
 readonly ERR_INPUT_STATUS_NO_DATA=12
 
 # [15-19] Negotiate source signal
-readonly ERR_READ_FMT_VIDEO=15
+readonly ERR_READ_PIXEL_FMT=15
 readonly ERR_WRITE_PIXEL_FMT=16
 readonly ERR_QUERY_TIMINGS=17
 readonly ERR_LOCK_SIGNAL=18
