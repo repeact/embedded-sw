@@ -27,7 +27,7 @@ source "/usr/lib/repeact/lib/common"
 #
 # Modified by
 # - read_pixel_fmt
-# - read_timings
+# - read_dv_timings
 # Consumed by
 # - report_config
 # - pixel_fmt_matches
@@ -54,7 +54,7 @@ pixel_fmt_matches() {
 # =============================================================================
 # Getters
 # =============================================================================
-read_timings() {
+read_dv_timings() {
     local dv_timings
 
     log "info" "Reading video configuration"
@@ -76,7 +76,7 @@ read_pixel_fmt() {
     # NOTE: no call to "v4l2" wrapper: stout is required for pixel settings parsing
     if ! fmt_video=$(v4l2-ctl -d "$VIDEO_DEVICE" --get-fmt-video 2> /dev/null); then
         log "err" "Could not read current pixel format on $VIDEO_DEVICE"
-        exit "$ERR_READ_FMT_VIDEO"
+        exit "$ERR_READ_PIXEL_FMT"
     fi
 
     signal[pix_fmt]="$(awk -F"'" '/Pixel Format/{print $2}' <<< "$fmt_video")"
@@ -93,7 +93,7 @@ update_pixel_fmt() {
     fi
 }
 
-lock_timings() {
+lock_dv_timings() {
     log "info" "Locking video timings"
     if ! v4l2 -d "$VIDEO_DEVICE" --set-dv-bt-timings query; then
         log "err" "Could not lock video timings"
@@ -103,16 +103,16 @@ lock_timings() {
 
 main() {
     read_pixel_fmt
-    read_timings
+    read_dv_timings
     report_config "Initial configuration"
 
     if ! pixel_fmt_matches; then
         update_pixel_fmt
     fi
-    lock_timings
+    lock_dv_timings
 
     read_pixel_fmt
-    read_timings
+    read_dv_timings
     report_config "Current configuration"
 
     exit "$ERR_OK"

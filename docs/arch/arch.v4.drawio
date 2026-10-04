@@ -715,7 +715,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="TK8GhDLk4chhCZzMH1nq" name="lock-src-signal">
-    <mxGraphModel dx="2515" dy="841" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1665" dy="481" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -763,7 +763,7 @@
         <mxCell id="vY0xA-Vt_W7xmTFoEIwk-5" parent="QNbTlIyww4u2vn8bTlaZ-41" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="ERR_QUERY_TIMINGS" vertex="1">
           <mxGeometry height="20" width="140" x="320" y="109" as="geometry" />
         </mxCell>
-        <mxCell id="vY0xA-Vt_W7xmTFoEIwk-1" parent="QNbTlIyww4u2vn8bTlaZ-41" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="ERR_READ_FMT_VIDEO" vertex="1">
+        <mxCell id="vY0xA-Vt_W7xmTFoEIwk-1" parent="QNbTlIyww4u2vn8bTlaZ-41" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="ERR_READ_PIXEL_FMT" vertex="1">
           <mxGeometry height="20" width="150" x="90" y="109" as="geometry" />
         </mxCell>
         <mxCell id="xXi3fdhKpe4x0sk4VRj--6" edge="1" parent="QNbTlIyww4u2vn8bTlaZ-41" source="QNbTlIyww4u2vn8bTlaZ-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#f8cecc;strokeColor=#b85450;startArrow=oval;startFill=1;" target="vY0xA-Vt_W7xmTFoEIwk-1">
