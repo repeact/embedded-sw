@@ -1,17 +1,12 @@
 # Setup project
 
 - [Setup project](#setup-project)
-  - [Install make](#install-make)
   - [Generate an SSH RSA key](#generate-an-ssh-rsa-key)
   - [RPi OS setup](#rpi-os-setup)
   - [SSH host/remote link](#ssh-hostremote-link)
   - [Setup validation](#setup-validation)
   - [Installation and deployment, from host to remote](#installation-and-deployment-from-host-to-remote)
   - [Make autocompletion *(optionnal)*](#make-autocompletion-optionnal)
-
-## Install make
-
-To use deployment/test toolchain, ``make`` is required and shall be downloaded.
 
 ## Generate an SSH RSA key
 

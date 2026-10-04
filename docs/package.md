@@ -8,8 +8,8 @@ Build, deploy, verify and remove the `repeact` Debian package.
 
 
 > [!IMPORTANT]
-> Build must run on MacOS/Linux *(Ubuntu, WSL2...)* due to incompatible script execution policy on windows. 
-<!-- > (`chmod +x`) -->
+> Build **must run on Linux** *(Ubuntu, WSL2...)*.  
+> Due to incompatible script execution policy on windows and dependencies issues.
 
 ## Dependencies
 
@@ -25,13 +25,11 @@ Run any below command from project root folder.
 
 | Commands         |
 | ---------------- |
+| `make build-pkg` |
 | `make install`   |
 | `make reboot`    |
 | `make uninstall` |
-| `make build-pkg` |
 
 > [!NOTE]
-> Package artifacts are written to untracked `pkg/` folder.  
-
-> [!NOTE]
-> Install bypass package version (call to `--reinstall`, no backrolling)
+> 1. Package artifacts are written to untracked `pkg/` folder.  
+> 2. Install bypasses package version (call to `--reinstall`, no backrolling)
